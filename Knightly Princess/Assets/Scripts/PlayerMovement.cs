@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool bigBattle;
 
+    public static bool berries;
+
     private void Start()
     {
         dist = new Vector2(1f, 1f);
@@ -139,6 +141,14 @@ public class PlayerMovement : MonoBehaviour
     {
         bigBattle = true;
         Debug.Log("Can do big battle");
+    }
+
+
+
+    public void Testing()
+    {
+        Debug.Log("motherfucka testin juice");
+        berries = true;
     }
 }
 
