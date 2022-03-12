@@ -18,17 +18,17 @@ public class PlayerMovement : MonoBehaviour
     private bool isShooting;
     private float shootDelay = .7f;
 
-
-    public bool left;
-    public bool right;
-    public bool up;
-    public bool down;
+    private bool canFight;
 
     private Vector2 dist;
 
+    private bool bigBattle;
+
     private void Start()
     {
-        dist = new Vector2(0.8f, 0.8f);
+        dist = new Vector2(1f, 1f);
+
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
 
@@ -40,33 +40,25 @@ public class PlayerMovement : MonoBehaviour
 
         if (movement.x < 0)
         {
-            left = true;
-            right = false;
             direction.x = -1;
             direction.y = 0;
         }
         if (movement.x > 0)
         {
-            left = false;
-            right = true;
             direction.x = 1;
             direction.y = 0;
         }
         if (movement.y > 0)
         {
-            up = true;
-            down = false;
             direction.y = 1;
             direction.x = 0;
         }
         if (movement.y < 0)
         {
-            up = false;
-            down = true;
             direction.y = -1;
             direction.x = 0;
         }
-        if (!stopFighting)
+        if (!stopFighting && canFight)
         {
             if (Input.GetButtonDown("Fire1"))
             {
@@ -85,12 +77,22 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isShooting)
+        if (!isShooting && (movement.x != 0 || movement.y != 0))
         {
+            rb.constraints = RigidbodyConstraints2D.None;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
+        else
+        {
+            freeze();
         }
     }
 
+    private void freeze()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+    }
 
 
     private void ResetShoot()
@@ -126,6 +128,17 @@ public class PlayerMovement : MonoBehaviour
     public void StartFighting()
     {
         stopFighting = false;
+    }
+
+    public void CanFight()
+    {
+        canFight = true;
+    }
+
+    public void BigBattle()
+    {
+        bigBattle = true;
+        Debug.Log("Can do big battle");
     }
 }
 
