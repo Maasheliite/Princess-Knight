@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        dist = new Vector2(1f, 1f);
+        dist = new Vector2(0.8f, 0.8f);
 
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }

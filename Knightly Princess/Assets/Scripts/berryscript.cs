@@ -20,6 +20,8 @@ public class berryscript : MonoBehaviour
             Berries.SetActive(false);
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             FindObjectOfType<PlayerMovement>().StopFighting();
+            FindObjectOfType<PlayerMovement>().CanFight();
+
 
         }
 
