@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
 
@@ -34,6 +35,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void DisplayNextSentence()
     {
+
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -58,5 +60,6 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        FindObjectOfType<PlayerMovement>().StartFighting();
     }
 }
