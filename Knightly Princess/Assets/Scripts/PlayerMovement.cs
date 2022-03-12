@@ -43,9 +43,12 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        if (!isShooting)
+        {
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+        }
 
 
         if (movement.x < 0)
@@ -103,7 +106,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void freeze()
     {
+
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
+
+        animator.SetFloat("Horizontal", 0);
+        animator.SetFloat("Vertical", 0);
+        animator.SetFloat("Speed", 0);
     }
 
 
@@ -157,7 +165,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void Testing()
     {
-        Debug.Log("motherfucka testin juice");
         berries = true;
     }
 }
