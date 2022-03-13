@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public void Start()
+    {
+        Application.targetFrameRate = 60;
 
+    }
 
     public void PlayGame()
     {
@@ -37,6 +41,5 @@ public class MainMenu : MonoBehaviour
     public void LoadMain()
     {
         SceneManager.LoadScene(2);
-        FindObjectOfType<PlayerMovement>().GetSpawned();
     }
 }

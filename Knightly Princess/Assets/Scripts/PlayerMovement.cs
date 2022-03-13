@@ -21,11 +21,11 @@ public class PlayerMovement : MonoBehaviour
     private bool isShooting;
     private float shootDelay = .7f;
 
-    private bool canFight;
+    public static bool canFight;
 
     private Vector2 dist;
 
-    private bool bigBattle;
+    public static bool bigBattle;
 
     public static bool berries;
 
@@ -156,6 +156,8 @@ public class PlayerMovement : MonoBehaviour
     public void CanFight()
     {
         canFight = true;
+        Debug.Log("Can do big battle");
+
     }
 
     public void BigBattle()
@@ -171,10 +173,5 @@ public class PlayerMovement : MonoBehaviour
         berries = true;
     }
 
-    public void GetSpawned()
-    {
-        gameObject.transform.position = caveSpawn.transform.position;
-
-    }
 }
 
