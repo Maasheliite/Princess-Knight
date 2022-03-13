@@ -1,0 +1,50 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ToEnterCave : MonoBehaviour
+{
+    private bool isInRange;
+
+    void Update()
+    {
+        if (isInRange)
+        {
+
+            if (PlayerMovement.canFight == true)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    SceneManager.LoadScene(5);
+                }
+
+            }
+
+        }
+    }
+
+
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isInRange = true;
+
+            if(PlayerMovement.canFight == false)
+            {
+                FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isInRange = false;
+        }
+    }
+}

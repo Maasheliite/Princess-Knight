@@ -9,4 +9,11 @@ public class sword2 : MonoBehaviour
 		FindObjectOfType<ItemManager>().Sworduppers();
 		Destroy(this.gameObject);
 	}
+
+
+
+	public void SaveSword()
+    {
+		FindObjectOfType<ItemManager>().Sworduppers();
+	}
 }
