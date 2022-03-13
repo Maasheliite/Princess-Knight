@@ -9,7 +9,7 @@ public class GateCode : MonoBehaviour
     {
         if (PlayerMovement.bigBattle == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(4);
         }
 
         else
