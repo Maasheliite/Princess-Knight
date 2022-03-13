@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -24,5 +26,17 @@ public class MainMenu : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+
+    public void LoadCave()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void LoadMain()
+    {
+        SceneManager.LoadScene(2);
+        FindObjectOfType<PlayerMovement>().GetSpawned();
     }
 }

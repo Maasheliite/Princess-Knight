@@ -29,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
 
     public static bool berries;
 
+    public GameObject caveSpawn;
+
+
     private void Start()
     {
         dist = new Vector2(0.8f, 0.8f);
@@ -166,6 +169,12 @@ public class PlayerMovement : MonoBehaviour
     public void Testing()
     {
         berries = true;
+    }
+
+    public void GetSpawned()
+    {
+        gameObject.transform.position = caveSpawn.transform.position;
+
     }
 }
 
