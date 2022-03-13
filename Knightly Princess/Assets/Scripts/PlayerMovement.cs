@@ -53,6 +53,14 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Speed", movement.sqrMagnitude);
         }
 
+        else if (isShooting)
+        {
+            animator.SetFloat("Horizontal", direction.x);
+            animator.SetFloat("Vertical", direction.y);
+            animator.SetFloat("Speed", 0);
+        }
+
+
 
         if (movement.x < 0)
         {
@@ -81,6 +89,8 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetButtonDown("Fire1"))
             {
                 if (isShooting) return;
+
+                animator.SetBool("isAttacking", true);
 
                 isShooting = true;
                 Invoke("ActuallyShoot", .1f);
@@ -120,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void ResetShoot()
     {
+        animator.SetBool("isAttacking", false);
         isShooting = false;
 
     }
