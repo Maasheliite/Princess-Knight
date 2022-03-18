@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: CliffTilemap2_2
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 8405744941261834308, guid: 150532eab21f5284a9d57a716676df3b, type: 3}
+  m_Sprite: {fileID: 8405744941261834308, guid: 365d83d586bc1aa488bdf21f4b2ce916, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
