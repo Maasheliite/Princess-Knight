@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aafa762d0ba14d6458625949f542e70b
+guid: e4cd52db6d55f854096f90437a8c3efe
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -139,7 +139,7 @@ TextureImporter:
       name: CliffTilemap_1
       rect:
         serializedVersion: 2
-        x: 54
+        x: 18
         y: 0
         width: 18
         height: 82
@@ -181,7 +181,7 @@ TextureImporter:
       name: CliffTilemap_3
       rect:
         serializedVersion: 2
-        x: 18
+        x: 54
         y: 0
         width: 18
         height: 82
