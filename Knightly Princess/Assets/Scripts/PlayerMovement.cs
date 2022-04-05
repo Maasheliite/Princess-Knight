@@ -29,8 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
     public static bool berries;
 
-    public GameObject caveSpawn;
-
 
     private void Start()
     {

@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Player
+    uniqueID: 1937468939
+    locked: 0
+  - name: Tree
+    uniqueID: 456650073
+    locked: 0
