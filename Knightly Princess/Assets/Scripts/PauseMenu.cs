@@ -47,16 +47,4 @@ public class PauseMenu : MonoBehaviour
         
     }
 
-    public void GoBack()
-    {
-        SceneManager.LoadScene(0);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
-
-    public void QuitGame()
-    {
-        Debug.Log("Quit");
-        Application.Quit();
-    }
 }

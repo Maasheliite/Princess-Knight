@@ -11,7 +11,7 @@ public class GateCode : MonoBehaviour
     {
         if (PlayerMovement.bigBattle == true)
         {
-            SceneManager.LoadScene(4);
+            StartCoroutine(FindObjectOfType<LevelLoader>().LoadLevel(4));
         }
 
         else

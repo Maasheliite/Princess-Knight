@@ -16,7 +16,7 @@ public class ToEnterCave : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    SceneManager.LoadScene(5);
+                    FindObjectOfType<LevelLoader>().LoadCave();
                 }
 
             }
