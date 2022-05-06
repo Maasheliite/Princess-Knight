@@ -14,6 +14,9 @@ public class DialogueManager : MonoBehaviour
 
     public Queue<string> sentences;
 
+    public GameObject diaFrame;
+    public GameObject PrincessSprite;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -21,6 +24,11 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        if (dialogue.name == "Princess")
+        {
+            diaFrame.SetActive(true);
+            PrincessSprite.SetActive(true);
+        }
 
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
@@ -60,6 +68,9 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        diaFrame.SetActive(false);
+        PrincessSprite.SetActive(false);
+
         animator.SetBool("IsOpen", false);
         FindObjectOfType<PlayerMovement>().StartFighting();
     }

@@ -46,8 +46,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (!isShooting)
         {
-            animator.SetFloat("Horizontal", movement.x);
-            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Horizontal", direction.x);
+            animator.SetFloat("Vertical", direction.y);
             animator.SetFloat("Speed", movement.sqrMagnitude);
         }
 
