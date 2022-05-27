@@ -47,6 +47,20 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(2));
     }
 
+    public void LoadWizzard()
+    {
+        StartCoroutine(LoadLevel(6));
+    }
+
+    public void LoadSecretForest()
+    {
+        StartCoroutine(LoadLevel(7));
+    }
+
+    public void LoadDungeon()
+    {
+        StartCoroutine(LoadLevel(8));
+    }
 
     public IEnumerator LoadLevel(int levelindex)
     {
