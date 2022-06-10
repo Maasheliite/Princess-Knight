@@ -13,11 +13,14 @@ public class SlimeAI : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
     public float moveSpeed = 5f;
+    public AudioClip SlimeGettingHit;
+    private AudioSource SlimeAudioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        SlimeAudioSource = this.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -44,8 +47,10 @@ public class SlimeAI : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Slash"))
         {
-            
-            Destroy(gameObject);
+
+            SlimeAudioSource.PlayOneShot(SlimeGettingHit);
+
+            Destroy(gameObject, 0.5f);
             
         }
     }
