@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class sword1 : MonoBehaviour
+public class RingPickup : MonoBehaviour
 {
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-		Destroy(this.gameObject);
-        ItemStatic.sword = true;
-	}
+        Destroy(this.gameObject);
+        ItemStatic.ring = true;
+    }
+
 }

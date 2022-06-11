@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class sword2 : MonoBehaviour
+public class HelmetScript : MonoBehaviour
 {
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		ItemStatic.magicSword = true;
+		ItemStatic.helmet = true;
 		Destroy(this.gameObject);
 	}
-
-
 }

@@ -12,7 +12,7 @@ public class ToEnterCave : MonoBehaviour
         if (isInRange)
         {
 
-            if (PlayerMovement.canFight == true)
+            if (ItemStatic.sword == true)
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -33,7 +33,7 @@ public class ToEnterCave : MonoBehaviour
         {
             isInRange = true;
 
-            if(PlayerMovement.canFight == false)
+            if(ItemStatic.sword == false)
             {
                 FindObjectOfType<DialogueTrigger>().TriggerDialogue();
             }

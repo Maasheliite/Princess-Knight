@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isShooting;
     private float shootDelay = .7f;
 
-    public static bool canFight;
 
     private Vector2 dist;
 
@@ -84,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
             direction.y = -1;
             direction.x = 0;
         }
-        if (!stopFighting && canFight)
+        if (!stopFighting && ItemStatic.sword || !stopFighting && ItemStatic.magicSword)
         {
             if (Input.GetButtonDown("Fire1"))
             {
@@ -163,14 +162,6 @@ public class PlayerMovement : MonoBehaviour
     {
         stopFighting = false;
     }
-
-    public void CanFight()
-    {
-        canFight = true;
-        Debug.Log("Can do big battle");
-
-    }
-
     public void BigBattle()
     {
         bigBattle = true;

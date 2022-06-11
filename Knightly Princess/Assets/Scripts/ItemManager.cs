@@ -11,7 +11,6 @@ public class ItemManager : MonoBehaviour
     public void SwordPickup()
     {
         swordPic.SetActive(true);
-        FindObjectOfType<PlayerMovement>().CanFight();
     }
 
     public void Sworduppers()

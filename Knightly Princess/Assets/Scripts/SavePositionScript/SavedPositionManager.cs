@@ -5,8 +5,3 @@ public static class SavedPositionManager // Static class to remember player posi
 {
     public static Dictionary<int, Vector3> savedPositions = new Dictionary<int, Vector3>();
 }
-
-public static class SavedSword
-{
-    public static bool hasSword;
-}
