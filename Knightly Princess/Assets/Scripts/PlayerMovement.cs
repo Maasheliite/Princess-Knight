@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         dist = new Vector2(0.8f, 0.8f);
 
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
+       
     }
 
 
@@ -49,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Horizontal", direction.x);
             animator.SetFloat("Vertical", direction.y);
             animator.SetFloat("Speed", movement.sqrMagnitude);
+  
         }
 
         else if (isShooting)
