@@ -6,14 +6,9 @@ public class sword2 : MonoBehaviour
 {
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		FindObjectOfType<ItemManager>().Sworduppers();
+		ItemStatic.magicSword = true;
 		Destroy(this.gameObject);
 	}
 
 
-
-	public void SaveSword()
-    {
-		FindObjectOfType<ItemManager>().Sworduppers();
-	}
 }

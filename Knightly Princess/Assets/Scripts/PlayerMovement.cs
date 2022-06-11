@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isShooting;
     private float shootDelay = .7f;
 
-    public static bool canFight;
 
     private Vector2 dist;
 
@@ -35,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         dist = new Vector2(0.8f, 0.8f);
 
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
+       
     }
 
 
@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Horizontal", direction.x);
             animator.SetFloat("Vertical", direction.y);
             animator.SetFloat("Speed", movement.sqrMagnitude);
+  
         }
 
         else if (isShooting)
@@ -82,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
             direction.y = -1;
             direction.x = 0;
         }
-        if (!stopFighting && canFight)
+        if (!stopFighting && ItemStatic.sword || !stopFighting && ItemStatic.magicSword)
         {
             if (Input.GetButtonDown("Fire1"))
             {
@@ -161,14 +162,6 @@ public class PlayerMovement : MonoBehaviour
     {
         stopFighting = false;
     }
-
-    public void CanFight()
-    {
-        canFight = true;
-        Debug.Log("Can do big battle");
-
-    }
-
     public void BigBattle()
     {
         bigBattle = true;

@@ -10,11 +10,6 @@ public class SaveAndRestorePosition : MonoBehaviour
         {
             transform.position = SavedPositionManager.savedPositions[sceneIndex];
         }
-
-        if (SavedSword.hasSword == true)
-        {
-            FindObjectOfType<ItemManager>().Sworduppers();
-        }
     }
 
     void OnDestroy() // Unloading scene, so save position.
@@ -23,7 +18,6 @@ public class SaveAndRestorePosition : MonoBehaviour
         SavedPositionManager.savedPositions[sceneIndex] = transform.position;
 
 
-        SavedSword.hasSword =  true;
     }
 }
 
