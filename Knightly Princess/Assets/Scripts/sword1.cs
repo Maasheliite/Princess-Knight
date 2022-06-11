@@ -7,7 +7,7 @@ public class sword1 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-		FindObjectOfType<ItemManager>().SwordPickup();
 		Destroy(this.gameObject);
+        ItemStatic.sword = true;
 	}
 }
