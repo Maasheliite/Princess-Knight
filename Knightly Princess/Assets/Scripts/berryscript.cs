@@ -8,12 +8,10 @@ public class berryscript : MonoBehaviour
     public GameObject Sword;
     public GameObject Berries;
 
-    private bool hasBerries;
     public void isBerries()
     {
-        hasBerries = ItemStatic.berries;
 
-        if (hasBerries)
+        if (ItemStatic.berries)
         {
             Sword.SetActive(true);
             ItemStatic.berries = false;

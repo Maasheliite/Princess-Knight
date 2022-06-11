@@ -16,6 +16,10 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject diaFrame;
     public GameObject PrincessSprite;
+    public GameObject BBSprite;
+    public GameObject WizardSprite;
+    public GameObject FarmerSprite;
+    public GameObject DemonSprite;
 
     void Start()
     {
@@ -26,9 +30,33 @@ public class DialogueManager : MonoBehaviour
     {
         if (dialogue.name == "Princess")
         {
-            diaFrame.SetActive(true);
             PrincessSprite.SetActive(true);
         }
+
+        if (dialogue.name == "Farmer")
+        {
+            FarmerSprite.SetActive(true);
+        }
+        if (dialogue.name == "Berry Brute")
+        {
+            BBSprite.SetActive(true);
+        }
+        if (dialogue.name == "Wizard")
+        {
+            WizardSprite.SetActive(true);
+        }
+
+        if (dialogue.name == "Demon Guard")
+        {
+            DemonSprite.SetActive(true);
+        }
+
+
+
+
+
+
+
 
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
@@ -68,8 +96,12 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        diaFrame.SetActive(false);
         PrincessSprite.SetActive(false);
+        FarmerSprite.SetActive(false);
+        BBSprite.SetActive(false);
+        WizardSprite.SetActive(false);
+        DemonSprite.SetActive(false);
+
 
         animator.SetBool("IsOpen", false);
         FindObjectOfType<PlayerMovement>().StartFighting();
