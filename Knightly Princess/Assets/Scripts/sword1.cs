@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class sword1 : MonoBehaviour
 {
+    public AudioClip PickUp;
+    private AudioSource ItemAudioSource;
+    void Start()
+    {
 
+        ItemAudioSource = this.GetComponent<AudioSource>();
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-		Destroy(this.gameObject);
-        ItemStatic.sword = true;
-	}
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            ItemAudioSource.PlayOneShot(PickUp);
+            ItemStatic.sword = true;
+            Destroy(this.gameObject, 0.7f);
+        }
+
+    }
 }

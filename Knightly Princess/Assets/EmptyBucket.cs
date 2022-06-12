@@ -4,9 +4,21 @@ using UnityEngine;
 
 public class EmptyBucket : MonoBehaviour
 {
+    public AudioClip PickUp;
+    private AudioSource ItemAudioSource;
+    void Start()
+    {
+
+        ItemAudioSource = this.GetComponent<AudioSource>();
+    }
     private void OnCollisionEnter2D(Collision2D collision)
-	{
-		ItemStatic.emptyBucket = true;
-		Destroy(this.gameObject);
-	}
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            ItemAudioSource.PlayOneShot(PickUp);
+            ItemStatic.emptyBucket = true;
+            Destroy(this.gameObject, 0.7f);
+        }
+
+    }
 }

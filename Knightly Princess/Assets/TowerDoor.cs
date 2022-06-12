@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TowerDoor : MonoBehaviour
 {
+    
     public void WizzardTowerDoor()
     {
         if (ItemStatic.ring)
