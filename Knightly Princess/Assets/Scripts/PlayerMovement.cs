@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 dist;
 
+    public GameObject Prompt;
+
     private void Start()
     {
         if (ItemStatic.magicSword)
@@ -58,7 +60,15 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
+        if (ItemStatic.isInRange)
+        {
+            Prompt.SetActive(true);
+        }
 
+        else
+        {
+            Prompt.SetActive(false);
+        }
 
 
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -84,12 +94,15 @@ public class PlayerMovement : MonoBehaviour
         if (movement.x < 0)
         {
             gameObject.transform.localRotation = Quaternion.Euler(0, 180, 0);
+            Prompt.transform.localRotation = Quaternion.Euler(0, 180, 0);
             direction.x = -1;
             direction.y = 0;
         }
         if (movement.x > 0)
         {
             gameObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            Prompt.transform.localRotation = Quaternion.Euler(0, 0, 0);
+
             direction.x = 1;
             direction.y = 0;
         }

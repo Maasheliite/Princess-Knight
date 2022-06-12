@@ -25,4 +25,7 @@ public static class ItemStatic
     public static int health = 100;
 
 
+    public static bool isInRange;
+
+
 }
