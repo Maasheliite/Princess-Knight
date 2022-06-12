@@ -39,6 +39,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1066549308810563329, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1066549308810563331, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
       propertyPath: AttackTimer
       value: 0.6
