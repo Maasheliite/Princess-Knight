@@ -14,6 +14,8 @@ public class ToEnterCave : MonoBehaviour
 
             if (ItemStatic.sword == true)
             {
+                ItemStatic.isInRange = true;
+
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     FindObjectOfType<LevelLoader>().LoadCave();
@@ -45,6 +47,8 @@ public class ToEnterCave : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = false;
+            ItemStatic.isInRange = false;
+
         }
     }
 }

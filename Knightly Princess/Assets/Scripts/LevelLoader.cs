@@ -69,7 +69,10 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadWin()
     {
-        StartCoroutine(LoadLevel(4));
+        if (ItemStatic.helmet)
+        {
+            StartCoroutine(LoadLevel(4));
+        }
     }
 
 

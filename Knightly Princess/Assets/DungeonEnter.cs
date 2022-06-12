@@ -14,6 +14,8 @@ public class DungeonEnter : MonoBehaviour
 
             if (ItemStatic.magicSword == true)
             {
+                ItemStatic.isInRange = true;
+
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     FindObjectOfType<LevelLoader>().LoadDungeon();
@@ -45,6 +47,7 @@ public class DungeonEnter : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = false;
+            ItemStatic.isInRange = false;
         }
     }
 }

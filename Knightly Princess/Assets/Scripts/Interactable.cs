@@ -26,6 +26,8 @@ public class Interactable : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = true;
+            ItemStatic.isInRange = true;
+
         }
     }
 
@@ -34,6 +36,7 @@ public class Interactable : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = false;
+            ItemStatic.isInRange = false;
         }
     }
 }
