@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2309856370560652260}
   - component: {fileID: 2309856370560652261}
   - component: {fileID: 2309856370560652249}
+  - component: {fileID: 449826452}
   m_Layer: 0
   m_Name: BerryBrute
   m_TagString: Untagged
@@ -76,8 +77,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 76
-  m_Sprite: {fileID: 21300000, guid: 74688d564b231e447aed90e342c02de9, type: 3}
+  m_SortingOrder: 200
+  m_Sprite: {fileID: -847697710441370945, guid: 0baac76907ae73644b52ad6feb56845a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,7 +105,7 @@ MonoBehaviour:
     name: Berry Brute
     sentences:
     - Thank you for berries! Have this junk!!
-  BerryPrize: {fileID: 0}
+  Sword: {fileID: 0}
   Berries: {fileID: 0}
 --- !u!114 &2309856370560652261
 MonoBehaviour:
@@ -135,10 +136,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.58}
+  m_Offset: {x: 0.036803722, y: -0.1749869}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.51103383, y: 0.20070612}
+    pivot: {x: 0.5, y: 0.2}
     oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -146,8 +147,27 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.57307625, y: 0.47002614}
   m_EdgeRadius: 0
+--- !u!95 &449826452
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309856370560652258}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3540ce59251c2514ebd2188d89d3b7bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7775565271962513264
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,7 +315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4710575317626460305, guid: 782294e79697158498915b6b6d0a9e79, type: 3}
       propertyPath: m_Name
-      value: InteractableCircle (1)
+      value: CheckMission
       objectReference: {fileID: 0}
     - target: {fileID: 4710575317626460305, guid: 782294e79697158498915b6b6d0a9e79, type: 3}
       propertyPath: m_IsActive
@@ -482,7 +502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4710575317626460305, guid: 782294e79697158498915b6b6d0a9e79, type: 3}
       propertyPath: m_Name
-      value: InteractableCircle
+      value: GiveMission
       objectReference: {fileID: 0}
     - target: {fileID: 6279888277119695864, guid: 782294e79697158498915b6b6d0a9e79, type: 3}
       propertyPath: m_Radius

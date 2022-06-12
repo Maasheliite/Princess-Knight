@@ -67,6 +67,18 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(3));
     }
 
+    public void LoadWin()
+    {
+        StartCoroutine(LoadLevel(4));
+    }
+
+
+
+    public void LoadDemonCastle()
+    {
+        StartCoroutine(LoadLevel(9));
+    }
+
 
     public IEnumerator LoadLevel(int levelindex)
     {
