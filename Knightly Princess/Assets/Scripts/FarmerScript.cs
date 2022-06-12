@@ -7,6 +7,8 @@ public class FarmerScript : MonoBehaviour
     public Dialogue dialogue;
     public GameObject Shears;
 
+    public GameObject missioncheck;
+
     public void BucketQuest()
     {
 
@@ -16,6 +18,8 @@ public class FarmerScript : MonoBehaviour
             FindObjectOfType<PlayerMovement>().StopFighting();
 
             Shears.SetActive(true);
+
+            missioncheck.SetActive(false);
         }
 
     }
