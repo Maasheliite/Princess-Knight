@@ -123,63 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &89767462
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 755821114799433254, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_Name
-      value: EvilBerry Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.81451
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.106357
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
 --- !u!1001 &150407081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -201,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2791213464999398659, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2791213464999398659, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,26 +212,24 @@ MonoBehaviour:
   Player: {fileID: 1140335854}
   DetectRange: 5
   FireRange: 3
+  dist: 0
+  rb: {fileID: 0}
+  movement: {x: 0, y: 0}
   moveSpeed: 5
-  MonsterIdle:
-    audioclip: {fileID: 8300000, guid: c87fa194b13940f42a85609d66cbcc4b, type: 3}
-    soundDelay: 1.05
-    soundVolume: 1
-  MonsterMovement:
-    audioclip: {fileID: 8300000, guid: 5a29dc91a03abe9439dbeda7888af3f0, type: 3}
-    soundDelay: 2
-    soundVolume: 1
-  MonsterAttack:
-    audioclip: {fileID: 8300000, guid: 15766666885043c4a979dc91d7835723, type: 3}
-    soundDelay: 0
-    soundVolume: 0.25
-  MonsterDeath:
-    audioclip: {fileID: 8300000, guid: c3c2c6d2f873ebb46b28ed0625cf648b, type: 3}
-    soundDelay: 0
-    soundVolume: 1
+  MonsterIdle: {audioclip: {fileID: 8300000, guid: c87fa194b13940f42a85609d66cbcc4b, type: 3}, soundDelay: 1.05, soundVolume: 1}
+  MonsterMovement: {audioclip: {fileID: 8300000, guid: 5a29dc91a03abe9439dbeda7888af3f0, type: 3}, soundDelay: 2, soundVolume: 1}
+  MonsterAttack: {audioclip: {fileID: 8300000, guid: 15766666885043c4a979dc91d7835723, type: 3}, soundDelay: 0, soundVolume: 0.25}
+  MonsterDeath: {audioclip: {fileID: 8300000, guid: c3c2c6d2f873ebb46b28ed0625cf648b, type: 3}, soundDelay: 0, soundVolume: 1}
   AttackTimer: 1.5
+  AttackCooldown: 0
   soundCouroutineOn: 0
+  MonsterAudioSource: {fileID: 0}
+  IdleWalk: {x: 0, y: 0}
+  idletime: 0
+  timer: 0
+  walking: 0
   animator: {fileID: 340187658}
+  facingleft: 0
 --- !u!95 &340187658 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5697942009258636595, guid: 5c04b83e3503e9a4bb462db36d7881d8, type: 3}
@@ -315,7 +256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 167784733545357966, guid: 5c04b83e3503e9a4bb462db36d7881d8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 167784733545357966, guid: 5c04b83e3503e9a4bb462db36d7881d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -368,6 +309,87 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 167784733545357963, guid: 5c04b83e3503e9a4bb462db36d7881d8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5c04b83e3503e9a4bb462db36d7881d8, type: 3}
+--- !u!1001 &1026329659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 755821114799433254, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_Name
+      value: EvilBerry Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433272, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1140335854}
+    - target: {fileID: 755821114799433272, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: AttackTimer
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433272, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: MonsterMovement.soundDelay
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.91150343
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3462818
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755821114799433277, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180328401518029818, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: MaxDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180328401518029818, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180328401518029818, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 212d1655763d9fb43a1a376e7057b0a3, type: 3}
 --- !u!4 &1140335854 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791213464999398659, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
@@ -465,7 +487,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8944854693592351448, guid: d7fddb6b98f76e94683bd47c3efa46f7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8944854693592351448, guid: d7fddb6b98f76e94683bd47c3efa46f7, type: 3}
       propertyPath: m_LocalPosition.x

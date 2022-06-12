@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public struct SoundEffects
+{
+    public AudioClip audioclip;
+    public float soundDelay;
+    public float soundVolume;
+};
+
 public class SlimeAI : MonoBehaviour
 {
     public Transform Player;
@@ -13,10 +21,15 @@ public class SlimeAI : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
     public float moveSpeed = 5f;
-    public AudioClip MonsterDeath;
-    public AudioClip MonsterIdle;
-    public AudioClip MonsterMovement;
-    public AudioClip MonsterAttack;
+
+    public SoundEffects MonsterIdle;
+    public SoundEffects MonsterMovement;
+    public SoundEffects MonsterAttack;
+    public SoundEffects MonsterDeath;
+    public float AttackTimer;
+    private float AttackCooldown;
+
+    public bool soundCouroutineOn;
 
     private AudioSource MonsterAudioSource;
 
@@ -29,11 +42,14 @@ public class SlimeAI : MonoBehaviour
 
     private bool facingleft;
 
+
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
         MonsterAudioSource = this.GetComponent<AudioSource>();
+        soundCouroutineOn = true;
+        StartCoroutine(MakingSounds());
     }
 
     // Update is called once per frame
@@ -57,19 +73,20 @@ public class SlimeAI : MonoBehaviour
         else if (idletime == false) Idle();
 
 
-        
+
     }
 
     private void FixedUpdate()
     {
 
-        if (timer < Time.time && idletime == true )
+        if (timer < Time.time && idletime == true)
         {
             MoveCharacter(movement);
             if (walking < Time.time)
             {
                 Debug.Log("Timeout");
                 animator.SetBool("Idling", true);
+
 
                 timer = Time.time + 4;
                 idletime = false;
@@ -81,7 +98,7 @@ public class SlimeAI : MonoBehaviour
         }
     }
 
-    void MoveCharacter (Vector2 direction)
+    void MoveCharacter(Vector2 direction)
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
@@ -92,13 +109,16 @@ public class SlimeAI : MonoBehaviour
         if (collision.gameObject.CompareTag("Slash"))
         {
 
-            MonsterAudioSource.PlayOneShot(MonsterDeath);
+            MonsterAudioSource.PlayOneShot(MonsterDeath.audioclip, MonsterDeath.soundVolume);
 
             Destroy(gameObject, 0.5f);
-            
-        }
 
-        if (collision.gameObject.CompareTag("Player"))
+        }
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        AttackCooldown = AttackCooldown - Time.deltaTime;
+        if (collision.gameObject.CompareTag("Player") && (AttackCooldown <= 0))
         {
             bool leftHit = false;
             bool rightHit = false;
@@ -128,6 +148,8 @@ public class SlimeAI : MonoBehaviour
 
             FindObjectOfType<PlayerMovement>().TakeDamage();
             animator.SetBool("Attacking", true);
+            MonsterAudioSource.PlayOneShot(MonsterAttack.audioclip, MonsterAttack.soundVolume);
+            AttackCooldown = AttackTimer;
         }
     }
 
@@ -159,5 +181,25 @@ public class SlimeAI : MonoBehaviour
             movement = direction;
         }
 
+    }
+
+
+
+    IEnumerator MakingSounds()
+    {
+        while (soundCouroutineOn == true)
+        {
+            SoundEffects soundeffect;
+            if (idletime)
+            {
+                soundeffect = MonsterIdle;
+            }
+            else
+            {
+                soundeffect = MonsterMovement;
+            }
+            MonsterAudioSource.PlayOneShot(soundeffect.audioclip, soundeffect.soundVolume);
+            yield return new WaitForSeconds(soundeffect.audioclip.length+soundeffect.soundDelay);
+        }
     }
 }
