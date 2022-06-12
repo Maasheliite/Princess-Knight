@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProperLayout/ScaryDungeon.unity
     guid: a5114d61e9ab32d4a801a6f7483606b6
+  - enabled: 1
+    path: Assets/Scenes/ProperLayout/Demon gates.unity
+    guid: a9ea80b5e635d5445a3a6cb3b633e776
   m_configObjects: {}
