@@ -277,6 +277,7 @@ MonoBehaviour:
   IsMoving: 0
   soundCouroutineOn: 0
   animator: {fileID: 4866732790223280315}
+  damage: 2
 --- !u!1 &2437276129512764455
 GameObject:
   m_ObjectHideFlags: 0
