@@ -20,6 +20,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066549308810563334, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066549308810563334, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066549308810563334, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066549308810563334, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.15682
       objectReference: {fileID: 0}
@@ -61,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066549308810563357, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
       propertyPath: m_Name
-      value: GhostCow
+      value: GhostCow Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4866732790223280315, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
       propertyPath: m_Controller
