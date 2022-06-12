@@ -184,9 +184,9 @@ public class PlayerMovement : MonoBehaviour
         animator.runtimeAnimatorController = evilHelmet as RuntimeAnimatorController;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        ItemStatic.health--;
+        ItemStatic.health -= damage;
         Debug.Log(ItemStatic.health);
 
         if (ItemStatic.health <= 0)

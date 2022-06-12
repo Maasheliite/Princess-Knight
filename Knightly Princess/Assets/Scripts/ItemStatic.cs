@@ -22,7 +22,7 @@ public static class ItemStatic
     public static bool hasCut;
 
 
-    public static int health = 10;
+    public static int health = 100;
 
 
 }

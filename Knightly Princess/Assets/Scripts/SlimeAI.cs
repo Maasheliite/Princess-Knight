@@ -42,6 +42,8 @@ public class SlimeAI : MonoBehaviour
 
     private bool facingleft;
 
+    public int damage = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -146,7 +148,7 @@ public class SlimeAI : MonoBehaviour
 
 
 
-            FindObjectOfType<PlayerMovement>().TakeDamage();
+            FindObjectOfType<PlayerMovement>().TakeDamage(damage);
             animator.SetBool("Attacking", true);
             MonsterAudioSource.PlayOneShot(MonsterAttack.audioclip, MonsterAttack.soundVolume);
             AttackCooldown = AttackTimer;
