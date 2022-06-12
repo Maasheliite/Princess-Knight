@@ -9,7 +9,7 @@ public class ThornBushes : MonoBehaviour
         if (ItemStatic.shears)
         {
             ItemStatic.hasCut = true;
-            Destroy(gameObject);
+            Destroy(gameObject, 0.9f);
         }
     }
 }
