@@ -51,6 +51,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F) && ItemStatic.berries)
+        {
+            ItemStatic.health = 100;
+            ItemStatic.berries = false;
+        }
+
+
+
+
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
@@ -184,9 +194,9 @@ public class PlayerMovement : MonoBehaviour
         animator.runtimeAnimatorController = evilHelmet as RuntimeAnimatorController;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        ItemStatic.health--;
+        ItemStatic.health -= damage;
         Debug.Log(ItemStatic.health);
 
         if (ItemStatic.health <= 0)

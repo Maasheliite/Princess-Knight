@@ -356,18 +356,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 784771562}
     - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 180205025}
+    - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
@@ -375,11 +387,27 @@ PrefabInstance:
       value: GoUpTo2
       objectReference: {fileID: 0}
     - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: TowerLogic, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: UpBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208683090185519870, guid: 83a96e4b69f47534f80de69bac51ba41, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -451,6 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 180205024}
   - component: {fileID: 180205023}
+  - component: {fileID: 180205025}
   m_Layer: 0
   m_Name: StairsUpTo2
   m_TagString: Untagged
@@ -523,6 +552,25 @@ Transform:
   m_Father: {fileID: 1570108159}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &180205025
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180205022}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1cdb721a5410364aaddadb62fdf89ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &223355140
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 335653826}
   - component: {fileID: 335653827}
+  - component: {fileID: 335653828}
   m_Layer: 0
   m_Name: StairsDownTo2
   m_TagString: Untagged
@@ -749,6 +798,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &335653828
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335653825}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1cdb721a5410364aaddadb62fdf89ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &454786147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8871977806689053672, guid: 0726526382bb0884c82d329318b70f7b, type: 3}
@@ -32282,6 +32350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 728572658}
   - component: {fileID: 728572659}
+  - component: {fileID: 728572660}
   m_Layer: 0
   m_Name: StairsDownTo1
   m_TagString: Untagged
@@ -32354,6 +32423,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &728572660
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728572657}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1cdb721a5410364aaddadb62fdf89ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &755918738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34183,6 +34271,11 @@ MonoBehaviour:
   secondDown: {fileID: 482215604}
   thirdDown: {fileID: 1624065943}
   player: {fileID: 998972159}
+  rend: {fileID: 998972167}
+  first: {fileID: 180205025}
+  second: {fileID: 728572660}
+  third: {fileID: 1043088008}
+  fourth: {fileID: 335653828}
 --- !u!4 &784771563
 Transform:
   m_ObjectHideFlags: 0
@@ -34579,6 +34672,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2791213464999398663, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
   m_PrefabInstance: {fileID: 1402119552}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &998972167 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2791213464999398656, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
+  m_PrefabInstance: {fileID: 1402119552}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1000486951
 GameObject:
   m_ObjectHideFlags: 0
@@ -34635,6 +34733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1043088006}
   - component: {fileID: 1043088007}
+  - component: {fileID: 1043088008}
   m_Layer: 0
   m_Name: StairsUpTo3
   m_TagString: Untagged
@@ -34707,6 +34806,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1043088008
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043088005}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1cdb721a5410364aaddadb62fdf89ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1061368729
 PrefabInstance:
   m_ObjectHideFlags: 0

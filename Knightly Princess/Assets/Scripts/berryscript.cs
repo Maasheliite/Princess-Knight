@@ -5,6 +5,7 @@ using UnityEngine;
 public class berryscript : MonoBehaviour
 {
     public Dialogue dialogue;
+    public GameObject Sword;
 
     public void isBerries()
     {
@@ -15,7 +16,7 @@ public class berryscript : MonoBehaviour
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             FindObjectOfType<PlayerMovement>().StopFighting();
 
-
+            Sword.SetActive(true);
         }
 
     }

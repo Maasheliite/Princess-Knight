@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 89c8d43f9adfa114db9a5a086c4e20cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5165398760549998990
+    second: Sakura1LeavesFalling_0
+  - first:
+      213: 7732377058209038635
+    second: Sakura1LeavesFalling_1
+  - first:
+      213: 3173808612075599506
+    second: Sakura1LeavesFalling_2
+  - first:
+      213: 8596671909587152629
+    second: Sakura1LeavesFalling_3
+  - first:
+      213: 99293975791006844
+    second: Sakura1LeavesFalling_4
+  - first:
+      213: -8197235090737463279
+    second: Sakura1LeavesFalling_5
+  - first:
+      213: -8482121419118064893
+    second: Sakura1LeavesFalling_6
+  - first:
+      213: 9135450478790443884
+    second: Sakura1LeavesFalling_7
+  - first:
+      213: 6392120886333662005
+    second: Sakura1LeavesFalling_8
+  - first:
+      213: 7356659941557639634
+    second: Sakura1LeavesFalling_9
+  - first:
+      213: -668674067586990327
+    second: Sakura1LeavesFalling_10
+  - first:
+      213: -6238430166992569724
+    second: Sakura1LeavesFalling_11
+  - first:
+      213: 8584934525127951
+    second: Sakura1LeavesFalling_12
+  - first:
+      213: 2955756244428758116
+    second: Sakura1LeavesFalling_13
+  - first:
+      213: 8805091435119736017
+    second: Sakura1LeavesFalling_14
+  - first:
+      213: 4679896530197790320
+    second: Sakura1LeavesFalling_15
+  - first:
+      213: -1525548833427327904
+    second: Sakura1LeavesFalling_16
+  - first:
+      213: 3035736421379835765
+    second: Sakura1LeavesFalling_17
+  - first:
+      213: -6161429944258128060
+    second: Sakura1LeavesFalling_18
+  - first:
+      213: -8378118133883121944
+    second: Sakura1LeavesFalling_19
+  - first:
+      213: -4496374125188106314
+    second: Sakura1LeavesFalling_20
+  - first:
+      213: -7113383767292995570
+    second: Sakura1LeavesFalling_21
+  - first:
+      213: -5555529752721530093
+    second: Sakura1LeavesFalling_22
+  - first:
+      213: 7146624036544544286
+    second: Sakura1LeavesFalling_23
+  - first:
+      213: 7217518074978693930
+    second: Sakura1LeavesFalling_24
+  - first:
+      213: 6608793145075967094
+    second: Sakura1LeavesFalling_25
+  - first:
+      213: 4997531683697214323
+    second: Sakura1LeavesFalling_26
+  - first:
+      213: -890039453265822954
+    second: Sakura1LeavesFalling_27
+  - first:
+      213: -735553424423813244
+    second: Sakura1LeavesFalling_28
+  - first:
+      213: 230916932978910549
+    second: Sakura1LeavesFalling_29
+  - first:
+      213: 4432656756102732237
+    second: Sakura1LeavesFalling_30
+  - first:
+      213: 6342586379231055175
+    second: Sakura1LeavesFalling_31
+  - first:
+      213: -1987199117044676108
+    second: Sakura1LeavesFalling_32
+  - first:
+      213: -9019787454091654960
+    second: Sakura1LeavesFalling_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8163d52ece2fa740800000000000000
+      internalID: 5165398760549998990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b210eef67fbee4b60800000000000000
+      internalID: 7732377058209038635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29677dbfd12ab0c20800000000000000
+      internalID: 3173808612075599506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe658dfd838d4770800000000000000
+      internalID: 8596671909587152629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74fb5b4853c06100800000000000000
+      internalID: 99293975791006844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1100a34ad129d3e80800000000000000
+      internalID: -8197235090737463279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b4cbf6283794a80800000000000000
+      internalID: -8482121419118064893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c630a7b0fc3a7ce70800000000000000
+      internalID: 9135450478790443884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533e547441065b850800000000000000
+      internalID: 6392120886333662005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d993e55d3b181660800000000000000
+      internalID: 7356659941557639634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f36f27a7468b6f0800000000000000
+      internalID: -668674067586990327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ab354d0d4ac69a0800000000000000
+      internalID: -6238430166992569724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d4ac4d3ff7e1000800000000000000
+      internalID: 8584934525127951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c91dfd4a4f40920800000000000000
+      internalID: 2955756244428758116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d475254208f13a70800000000000000
+      internalID: 8805091435119736017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakura1LeavesFalling_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4734125, y: 0.2157222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07eb50c591552f040800000000000000
+      internalID: 4679896530197790320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
