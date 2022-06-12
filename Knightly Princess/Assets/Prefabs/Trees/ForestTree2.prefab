@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4785869493817004792}
   - component: {fileID: 6264695821362976830}
-  - component: {fileID: 8529654730238273385}
+  - component: {fileID: 2731091518666839471}
   m_Layer: 0
   m_Name: ForestTree2
   m_TagString: Untagged
@@ -82,8 +82,8 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!61 &8529654730238273385
+  m_SpriteSortPoint: 1
+--- !u!61 &2731091518666839471
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,10 +96,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06790388, y: -2.953913}
+  m_Offset: {x: 0.03442979, y: -0.49654627}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.50359714}
+    pivot: {x: 0.48958334, y: 0.19424461}
     oldSize: {x: 6, y: 8.6875}
     newSize: {x: 0.96, y: 1.39}
     adaptiveTilingThreshold: 0.5
@@ -107,5 +107,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3983214, y: 1.2195716}
+  m_Size: {x: 2.1467218, y: 1.2999277}
   m_EdgeRadius: 0
