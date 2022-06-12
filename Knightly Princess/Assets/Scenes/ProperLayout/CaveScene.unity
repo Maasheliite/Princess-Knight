@@ -2672,6 +2672,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6569284764140309390, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
+      propertyPath: StepVolume
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569284764140309390, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
+      propertyPath: currentClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c8e982fe13bb7304e831e8c04bbcd75a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
 --- !u!1001 &858346479

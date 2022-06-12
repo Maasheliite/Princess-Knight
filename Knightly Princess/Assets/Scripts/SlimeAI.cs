@@ -13,8 +13,12 @@ public class SlimeAI : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
     public float moveSpeed = 5f;
-    public AudioClip SlimeGettingHit;
-    private AudioSource SlimeAudioSource;
+    public AudioClip MonsterDeath;
+    public AudioClip MonsterIdle;
+    public AudioClip MonsterMovement;
+    public AudioClip MonsterAttack;
+
+    private AudioSource MonsterAudioSource;
 
     private Vector2 IdleWalk;
     private bool idletime;
@@ -29,7 +33,7 @@ public class SlimeAI : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        SlimeAudioSource = this.GetComponent<AudioSource>();
+        MonsterAudioSource = this.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -88,7 +92,7 @@ public class SlimeAI : MonoBehaviour
         if (collision.gameObject.CompareTag("Slash"))
         {
 
-            SlimeAudioSource.PlayOneShot(SlimeGettingHit);
+            MonsterAudioSource.PlayOneShot(MonsterDeath);
 
             Destroy(gameObject, 0.5f);
             
