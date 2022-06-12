@@ -62,6 +62,12 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(8));
     }
 
+    public void LoadLose()
+    {
+        StartCoroutine(LoadLevel(3));
+    }
+
+
     public IEnumerator LoadLevel(int levelindex)
     {
         transition.SetTrigger("FadeStart");

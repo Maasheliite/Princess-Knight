@@ -18,6 +18,9 @@ public class HelmetScript : MonoBehaviour
             ItemAudioSource.PlayOneShot(PickUp);
             ItemStatic.helmet = true;
             Destroy(this.gameObject, 0.7f);
+
+            FindObjectOfType<PlayerMovement>().DemonHelmet();
+
         }
 
     }

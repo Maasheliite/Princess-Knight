@@ -121,6 +121,7 @@ MonoBehaviour:
   FireRange: 3
   moveSpeed: 1
   SlimeGettingHit: {fileID: 8300000, guid: 5e7d207f34a10a340a7c1ea953a21845, type: 3}
+  animator: {fileID: 4866732790223280315}
 --- !u!50 &1066549308810563330
 Rigidbody2D:
   serializedVersion: 4
@@ -141,7 +142,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &4866732790223280315
 Animator:
   serializedVersion: 3

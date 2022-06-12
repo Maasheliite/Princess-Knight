@@ -16,6 +16,15 @@ public class SlimeAI : MonoBehaviour
     public AudioClip SlimeGettingHit;
     private AudioSource SlimeAudioSource;
 
+    private Vector2 IdleWalk;
+    private bool idletime;
+    private float timer = 0;
+    private float walking;
+
+    public Animator animator;
+
+    private bool facingleft;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,15 +35,46 @@ public class SlimeAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = Player.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        direction.Normalize();
-        movement = direction;
+        dist = Vector2.Distance(gameObject.transform.position, Player.transform.position);
+
+
+
+        if (dist < DetectRange)
+        {
+            Vector3 direction = Player.position - transform.position;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            direction.Normalize();
+            movement = direction;
+            idletime = false;
+            animator.SetBool("Idling", false);
+
+        }
+
+        else if (idletime == false) Idle();
+
+
+        
     }
 
     private void FixedUpdate()
     {
-        MoveCharacter(movement);
+
+        if (timer < Time.time && idletime == true )
+        {
+            MoveCharacter(movement);
+            if (walking < Time.time)
+            {
+                Debug.Log("Timeout");
+                animator.SetBool("Idling", true);
+
+                timer = Time.time + 4;
+                idletime = false;
+            }
+        }
+        if (dist < DetectRange)
+        {
+            MoveCharacter(movement);
+        }
     }
 
     void MoveCharacter (Vector2 direction)
@@ -53,5 +93,67 @@ public class SlimeAI : MonoBehaviour
             Destroy(gameObject, 0.5f);
             
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            bool leftHit = false;
+            bool rightHit = false;
+            float f = 0.5f;
+
+
+            var hit = collision.contacts[0];
+            if (Mathf.Abs(hit.normal.x) > f)
+            {
+                if (hit.normal.x > 0f)
+                    leftHit = true;
+                else
+                    rightHit = true;
+            }
+
+            if (leftHit)
+            {
+                gameObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+            if (rightHit)
+            {
+                gameObject.transform.localRotation = Quaternion.Euler(0, 180, 0);
+            }
+
+
+
+
+            FindObjectOfType<PlayerMovement>().TakeDamage();
+            animator.SetBool("Attacking", true);
+        }
+    }
+
+
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            animator.SetBool("Attacking", false);
+        }
+    }
+
+    private void Idle()
+    {
+        if (timer < Time.time)
+        {
+            Debug.Log("Idle");
+            animator.SetBool("Idling", false);
+
+            idletime = true;
+            walking = Time.time + 5;
+
+            IdleWalk = Random.insideUnitCircle * 4;
+
+            Vector3 direction = IdleWalk - (Vector2)transform.position;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            direction.Normalize();
+            movement = direction;
+        }
+
     }
 }

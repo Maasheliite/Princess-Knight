@@ -21,4 +21,8 @@ public static class ItemStatic
 
     public static bool hasCut;
 
+
+    public static int health = 10;
+
+
 }

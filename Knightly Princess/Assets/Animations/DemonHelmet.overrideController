@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DemonHelmet
+  m_Controller: {fileID: 9100000, guid: 2d8b0dc6a94ca914abae35c317e6aacf, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 38503aecf4e75f84ea11454fee60bed6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e6ce0c7fa9e935040aadda7ac420c516, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9b78bf148cab520479b44cee13afae59, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4b8de731d52c5024b8d55a0f842fe2cd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6ef2bdf070f58fa4d95e131bd783cc44, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e13d292d7dc96394da83715f97797775, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 29ce4ea8ca5e16a4a9df9375033af720, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1b9b4962c3b2ffc43806df16c907fff2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f240f267d9a8fe488cbb60469b13ce0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 84f90b58b35964a4798c87d69d874338, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 15cda01e36cc89e489ce273fe0278ed3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 59adf188b9d202a43a1698d7c4ef4f02, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 84583c968ea164e43a1bd68c2c631696, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9dcd3bd805915cf459e5427320a2aece, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 811d4e42872e1d64b83804711e34a951, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 97bc56cc83f0275488d4cc802c50ea36, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 66b0b234606aeb747b9ba9113c1c0a8d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3bf41055a944bac4192da7bad3148bb2, type: 2}

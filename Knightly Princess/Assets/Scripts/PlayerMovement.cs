@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public AnimatorOverrideController magicSword;
+    public AnimatorOverrideController evilHelmet;
+
+
     public Animator animator;
 
 
@@ -24,13 +28,19 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 dist;
 
-    public static bool bigBattle;
-
-    public static bool berries;
-
-
     private void Start()
     {
+        if (ItemStatic.magicSword)
+        {
+            animator.runtimeAnimatorController = magicSword as RuntimeAnimatorController;
+        }
+
+        if (ItemStatic.helmet)
+        {
+            animator.runtimeAnimatorController = evilHelmet as RuntimeAnimatorController;
+        }
+
+
         dist = new Vector2(0.8f, 0.8f);
 
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -162,18 +172,27 @@ public class PlayerMovement : MonoBehaviour
     {
         stopFighting = false;
     }
-    public void BigBattle()
+
+
+    public void MagicSword()
     {
-        bigBattle = true;
-        Debug.Log("Can do big battle");
+        animator.runtimeAnimatorController = magicSword as RuntimeAnimatorController;
     }
 
-
-
-    public void Testing()
+    public void DemonHelmet()
     {
-        berries = true;
+        animator.runtimeAnimatorController = evilHelmet as RuntimeAnimatorController;
     }
 
+    public void TakeDamage()
+    {
+        ItemStatic.health--;
+        Debug.Log(ItemStatic.health);
+
+        if (ItemStatic.health <= 0)
+        {
+            FindObjectOfType<LevelLoader>().LoadLose();
+        }
+    }
 }
 

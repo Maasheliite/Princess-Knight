@@ -9,7 +9,7 @@ public class GateCode : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (PlayerMovement.bigBattle == true)
+        if (ItemStatic.helmet == true)
         {
             StartCoroutine(FindObjectOfType<LevelLoader>().LoadLevel(4));
         }

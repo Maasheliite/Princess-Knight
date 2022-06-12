@@ -8,6 +8,9 @@ public class sword2 : MonoBehaviour
 	{
 		ItemStatic.magicSword = true;
 		Destroy(this.gameObject);
+
+
+		FindObjectOfType<PlayerMovement>().MagicSword();
 	}
 
 

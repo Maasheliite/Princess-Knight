@@ -206,6 +206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cfe3dced7c22341b07dda1d9d195f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  magicSword: {fileID: 22100000, guid: 0a204c3eca37fe240b570d777a503308, type: 2}
+  evilHelmet: {fileID: 22100000, guid: 4cc8c84ddad03d846a9ffef82461f23c, type: 2}
   animator: {fileID: 2791213464999398669}
   Slash: {fileID: 147893316254544703, guid: 7b056db09706c384baf70c80a0d71dd7, type: 3}
   Slashpoint: {fileID: 2791213466024218101}
