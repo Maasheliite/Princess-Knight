@@ -51,6 +51,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F) && ItemStatic.berries)
+        {
+            ItemStatic.health = 100;
+            ItemStatic.berries = false;
+        }
+
+
+
+
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
