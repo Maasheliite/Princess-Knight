@@ -7,10 +7,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7281750364575579455, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: MaxDistance
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7281750364575579455, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7281750364575579455, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1066549308810563329, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3147964892032040842, guid: ecd39dec309b9904a89ba21483f15702, type: 3}
+    - target: {fileID: 1066549308810563329, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1066549308810563331, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
       propertyPath: SlimeGettingHit
       value: 
@@ -79,5 +95,46 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 880b48fbaab246d4ab7112317c81f809, type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: moveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: AttackTimer
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: MonsterIdle.audioclip
+      value: 
+      objectReference: {fileID: 8300000, guid: c87fa194b13940f42a85609d66cbcc4b, type: 3}
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: MonsterDeath.audioclip
+      value: 
+      objectReference: {fileID: 8300000, guid: c3c2c6d2f873ebb46b28ed0625cf648b, type: 3}
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: MonsterAttack.audioclip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15766666885043c4a979dc91d7835723, type: 3}
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: MonsterIdle.soundVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: MonsterDeath.soundVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: MonsterAttack.soundVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: MonsterMovement.audioclip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a29dc91a03abe9439dbeda7888af3f0, type: 3}
+    - target: {fileID: 5006660857701315178, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: MonsterMovement.soundVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4ad99083eec965b449942e320feab3d8, type: 3}

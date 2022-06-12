@@ -12,7 +12,7 @@ public struct SoundEffects
 
 public class SlimeAI : MonoBehaviour
 {
-    public Transform Player;
+    private Transform Player;
     public float DetectRange = 5;
     public float FireRange = 3;
 
@@ -28,6 +28,12 @@ public class SlimeAI : MonoBehaviour
     public SoundEffects MonsterDeath;
     public float AttackTimer;
     private float AttackCooldown;
+    [SerializeField]
+    private bool IsAttacking;
+    [SerializeField]
+    private bool IsStandingStill;
+    [SerializeField]
+    private bool IsMoving;
 
     public bool soundCouroutineOn;
 
@@ -40,16 +46,18 @@ public class SlimeAI : MonoBehaviour
 
     public Animator animator;
 
-    private bool facingleft;
+   
 
 
     // Start is called before the first frame update
     void Start()
     {
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = this.GetComponent<Rigidbody2D>();
         MonsterAudioSource = this.GetComponent<AudioSource>();
         soundCouroutineOn = true;
         StartCoroutine(MakingSounds());
+        IsAttacking = false;
     }
 
     // Update is called once per frame
@@ -65,14 +73,23 @@ public class SlimeAI : MonoBehaviour
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             direction.Normalize();
             movement = direction;
+            IsMoving = true;
+            IsStandingStill = false;
             idletime = false;
             animator.SetBool("Idling", false);
 
         }
-
         else if (idletime == false) Idle();
 
-
+        //attack timer
+        if (AttackCooldown > 0)
+        {
+            AttackCooldown = AttackCooldown - Time.deltaTime;
+        }
+        else
+        {
+            IsAttacking = false;
+        }
 
     }
 
@@ -85,6 +102,8 @@ public class SlimeAI : MonoBehaviour
             if (walking < Time.time)
             {
                 Debug.Log("Timeout");
+                IsStandingStill = true;
+                IsMoving = false;
                 animator.SetBool("Idling", true);
 
 
@@ -101,6 +120,14 @@ public class SlimeAI : MonoBehaviour
     void MoveCharacter(Vector2 direction)
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+        if (direction.x < 0)
+        {
+            gameObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+        if (direction.x > 0)
+        {
+            gameObject.transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
     }
 
 
@@ -117,7 +144,7 @@ public class SlimeAI : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-        AttackCooldown = AttackCooldown - Time.deltaTime;
+
         if (collision.gameObject.CompareTag("Player") && (AttackCooldown <= 0))
         {
             bool leftHit = false;
@@ -144,12 +171,12 @@ public class SlimeAI : MonoBehaviour
             }
 
 
-
-
             FindObjectOfType<PlayerMovement>().TakeDamage();
             animator.SetBool("Attacking", true);
             MonsterAudioSource.PlayOneShot(MonsterAttack.audioclip, MonsterAttack.soundVolume);
             AttackCooldown = AttackTimer;
+            IsAttacking = true;
+       
         }
     }
 
@@ -165,9 +192,12 @@ public class SlimeAI : MonoBehaviour
 
     private void Idle()
     {
+        
         if (timer < Time.time)
         {
             Debug.Log("Idle");
+            IsMoving = true;
+            IsStandingStill = false;
             animator.SetBool("Idling", false);
 
             idletime = true;
@@ -189,17 +219,29 @@ public class SlimeAI : MonoBehaviour
     {
         while (soundCouroutineOn == true)
         {
-            SoundEffects soundeffect;
-            if (idletime)
+
+            if (!IsAttacking)
             {
-                soundeffect = MonsterIdle;
+                SoundEffects soundeffect;
+
+                if (IsMoving)
+                {
+                    soundeffect = MonsterMovement;
+                }
+                else
+                {
+                    soundeffect = MonsterIdle;
+                }
+
+                MonsterAudioSource.PlayOneShot(soundeffect.audioclip, soundeffect.soundVolume);
+               
+                yield return new WaitForSeconds(soundeffect.audioclip.length + soundeffect.soundDelay);
             }
             else
             {
-                soundeffect = MonsterMovement;
+               
+                yield return new WaitForSeconds(0.1f);
             }
-            MonsterAudioSource.PlayOneShot(soundeffect.audioclip, soundeffect.soundVolume);
-            yield return new WaitForSeconds(soundeffect.audioclip.length+soundeffect.soundDelay);
         }
     }
 }
