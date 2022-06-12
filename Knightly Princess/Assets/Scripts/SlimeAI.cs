@@ -54,14 +54,17 @@ public class SlimeAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player").transform;
+        
         rb = this.GetComponent<Rigidbody2D>();
         MonsterAudioSource = this.GetComponent<AudioSource>();
         soundCouroutineOn = true;
         StartCoroutine(MakingSounds());
         IsAttacking = false;
     }
-
+    private void Awake()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -101,6 +104,7 @@ public class SlimeAI : MonoBehaviour
         if (timer < Time.time && idletime == true)
         {
             MoveCharacter(movement);
+
             if (walking < Time.time)
             {
                 Debug.Log("Timeout");
@@ -109,7 +113,7 @@ public class SlimeAI : MonoBehaviour
                 animator.SetBool("Idling", true);
 
 
-                timer = Time.time + 4;
+                timer = Time.time + Random.Range(2.5f, 4f);
                 idletime = false;
             }
         }

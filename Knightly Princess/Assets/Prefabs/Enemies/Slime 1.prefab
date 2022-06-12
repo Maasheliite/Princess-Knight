@@ -252,21 +252,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19a135d0db6f0440bed08e86185cbf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DetectRange: 5
+  DetectRange: 4
   FireRange: 3
-  moveSpeed: 5
+  moveSpeed: 2
   MonsterIdle:
     audioclip: {fileID: 8300000, guid: cd3394923cc80f5469e2e1a38c475330, type: 3}
     soundDelay: 2
     soundVolume: 0.3
   MonsterMovement:
     audioclip: {fileID: 8300000, guid: f8cf8c3ccea9b3249ab1b4d2aef3cfa2, type: 3}
-    soundDelay: 0
+    soundDelay: 1
     soundVolume: 1
   MonsterAttack:
     audioclip: {fileID: 8300000, guid: 1bbe960c498eeb84caf7435a76de7638, type: 3}
     soundDelay: 0
-    soundVolume: 0.5
+    soundVolume: 0.25
   MonsterDeath:
     audioclip: {fileID: 8300000, guid: 93ee82e74cc210c4d839c6232c7b7961, type: 3}
     soundDelay: 0
