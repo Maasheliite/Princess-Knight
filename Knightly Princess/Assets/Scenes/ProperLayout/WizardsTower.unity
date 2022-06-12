@@ -48146,10 +48146,6 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1402119553}
-    - target: {fileID: 167784733545357963, guid: 5c04b83e3503e9a4bb462db36d7881d8, type: 3}
-      propertyPath: SlimeGettingHit
-      value: 
-      objectReference: {fileID: 8300000, guid: c3c2c6d2f873ebb46b28ed0625cf648b, type: 3}
     - target: {fileID: 167784733545357966, guid: 5c04b83e3503e9a4bb462db36d7881d8, type: 3}
       propertyPath: m_RootOrder
       value: 1

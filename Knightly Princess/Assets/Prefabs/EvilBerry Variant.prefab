@@ -75,5 +75,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: EvilBerry
       objectReference: {fileID: 0}
+    - target: {fileID: 4866732790223280315, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c159c445e3a8d164baf2c2702f1a745f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
