@@ -8,11 +8,12 @@ public class FarmerScript : MonoBehaviour
     public GameObject Shears;
 
     public GameObject missioncheck;
+    public DialogueTrigger dialogueTrigger;
 
     public void BucketQuest()
     {
 
-        if (ItemStatic.HasWatered)
+        if (ItemStatic.HasWatered && !ItemStatic.hasDoneFarmer)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             FindObjectOfType<PlayerMovement>().StopFighting();
@@ -20,9 +21,20 @@ public class FarmerScript : MonoBehaviour
             Shears.SetActive(true);
 
             missioncheck.SetActive(false);
+
+            ItemStatic.hasDoneFarmer = true;
         }
 
     }
+
+    public void GiveMission()
+    {
+        if (!ItemStatic.hasDoneFarmer)
+        {
+            dialogueTrigger.TriggerDialogue();
+        }
+    }
+
 
     private void Start()
     {
