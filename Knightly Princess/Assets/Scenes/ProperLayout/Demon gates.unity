@@ -500,6 +500,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 448952064, guid: fd15258f3ad78df4f8297d5034df6253, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448952064, guid: fd15258f3ad78df4f8297d5034df6253, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5903840111912899171, guid: fd15258f3ad78df4f8297d5034df6253, type: 3}
       propertyPath: m_Pivot.x
       value: 0
