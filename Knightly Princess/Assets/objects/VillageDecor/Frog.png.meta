@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 8e93614daef180e4483d88c8f6de5fc9
+guid: 0c3d3b13389cc324c94e0d900f198339
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2016002171343856643
-    second: BackWalk_0
+      213: 2820143329777312509
+    second: Frog_0
   - first:
-      213: -1020084239294929083
-    second: BackWalk_1
+      213: -1081280975163990012
+    second: Frog_1
   - first:
-      213: 7575962817254003216
-    second: BackWalk_2
-  - first:
-      213: -3455128267116655254
-    second: BackWalk_3
+      213: -8937333279313398460
+    second: Frog_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,85 +100,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackWalk_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfb12a6d4b8b504e0800000000000000
-      internalID: -2016002171343856643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackWalk_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 547e9dbf9cee7d1f0800000000000000
-      internalID: -1020084239294929083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackWalk_2
+      name: Frog_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0121ef90b0a332960800000000000000
-      internalID: 7575962817254003216
+      spriteID: df2601baa69232720800000000000000
+      internalID: 2820143329777312509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackWalk_3
+      name: Frog_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 12
         y: 0
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6dc919a52bec00d0800000000000000
-      internalID: -3455128267116655254
+      spriteID: 40066f49ea48ef0f0800000000000000
+      internalID: -1081280975163990012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frog_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4457f370cb638f380800000000000000
+      internalID: -8937333279313398460
       vertices: []
       indices: 
       edges: []

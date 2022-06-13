@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 8e93614daef180e4483d88c8f6de5fc9
+guid: 11d637325554cfd43a22dab95e3533e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2016002171343856643
-    second: BackWalk_0
+      213: -5065515916305832094
+    second: Rat2_0
   - first:
-      213: -1020084239294929083
-    second: BackWalk_1
+      213: -4592622253530214004
+    second: Rat2_1
   - first:
-      213: 7575962817254003216
-    second: BackWalk_2
-  - first:
-      213: -3455128267116655254
-    second: BackWalk_3
+      213: -3423027878245638545
+    second: Rat2_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,85 +100,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackWalk_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfb12a6d4b8b504e0800000000000000
-      internalID: -2016002171343856643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackWalk_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 547e9dbf9cee7d1f0800000000000000
-      internalID: -1020084239294929083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackWalk_2
+      name: Rat2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0121ef90b0a332960800000000000000
-      internalID: 7575962817254003216
+      spriteID: 267e084cc1ca3b9b0800000000000000
+      internalID: -5065515916305832094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackWalk_3
+      name: Rat2_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 26
         y: 0
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6dc919a52bec00d0800000000000000
-      internalID: -3455128267116655254
+      spriteID: c8117c6a46ab340c0800000000000000
+      internalID: -4592622253530214004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rat2_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ed8ecd746fe70d0800000000000000
+      internalID: -3423027878245638545
       vertices: []
       indices: 
       edges: []

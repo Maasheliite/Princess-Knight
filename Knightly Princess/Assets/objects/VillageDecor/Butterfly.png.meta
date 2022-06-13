@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 8e93614daef180e4483d88c8f6de5fc9
+guid: 6152dda723f5cb1439f85c7fef6667a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2016002171343856643
-    second: BackWalk_0
+      213: 4530433918361379743
+    second: Butterfly_0
   - first:
-      213: -1020084239294929083
-    second: BackWalk_1
+      213: 4699623745766655208
+    second: Butterfly_1
   - first:
-      213: 7575962817254003216
-    second: BackWalk_2
-  - first:
-      213: -3455128267116655254
-    second: BackWalk_3
+      213: -265841166610147798
+    second: Butterfly_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,85 +100,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackWalk_0
+      name: Butterfly_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
+        y: 8
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfb12a6d4b8b504e0800000000000000
-      internalID: -2016002171343856643
+      spriteID: f93af4e35a55fde30800000000000000
+      internalID: 4530433918361379743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackWalk_1
+      name: Butterfly_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
+        x: 12
+        y: 8
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 547e9dbf9cee7d1f0800000000000000
-      internalID: -1020084239294929083
+      spriteID: 8e48968a5ea683140800000000000000
+      internalID: 4699623745766655208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackWalk_2
+      name: Butterfly_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0121ef90b0a332960800000000000000
-      internalID: 7575962817254003216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackWalk_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6dc919a52bec00d0800000000000000
-      internalID: -3455128267116655254
+      spriteID: a26d6811eda8f4cf0800000000000000
+      internalID: -265841166610147798
       vertices: []
       indices: 
       edges: []
