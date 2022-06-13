@@ -5940,17 +5940,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2791213464999398656, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2791213464999398659, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2791213464999398659, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 2791213464999398659, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.91
+      value: -4.73
       objectReference: {fileID: 0}
     - target: {fileID: 2791213464999398659, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
       propertyPath: m_LocalPosition.z

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5692085237742002551}
   - component: {fileID: 5692085237742002548}
   - component: {fileID: 5692085237742002549}
+  - component: {fileID: 336401541438835657}
   m_Layer: 0
   m_Name: Rocks3
   m_TagString: Untagged
@@ -96,6 +97,22 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000000144007295, y: -0.12080209}
-  m_Size: {x: 0.93750024, y: 0.3833984}
+  m_Offset: {x: -0.000000009294656, y: -0.07796923}
+  m_Size: {x: 0.9375006, y: 0.28443876}
   m_Direction: 1
+--- !u!58 &336401541438835657
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5692085237742002506}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.022490978, y: -0.13298707}
+  serializedVersion: 2
+  m_Radius: 0.19435792
