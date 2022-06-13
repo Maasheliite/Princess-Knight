@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1043736765630832644}
   - component: {fileID: 1043736765630832645}
   - component: {fileID: 1043736765630832666}
+  - component: {fileID: 1066532170}
   m_Layer: 0
   m_Name: simplegreen2
   m_TagString: Untagged
@@ -96,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14275563, y: -0.3362}
+  m_Offset: {x: 0.14275563, y: -1.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5317369, y: 0.23814595}
@@ -109,3 +110,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.275698, y: 1.4733605}
   m_EdgeRadius: 0
+--- !u!95 &1066532170
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043736765630832667}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abf8d1b3d8251894f8a9d3f6358bbc00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

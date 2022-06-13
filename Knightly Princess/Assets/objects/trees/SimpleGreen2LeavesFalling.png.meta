@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: 7719549706410700701
     second: SimpleGreen2LeavesFalling_7
+  - first:
+      213: 313824086568088139
+    second: SimpleGreen2LeavesFalling_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,7 +126,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5317369, y: 0.2381459}
+      pivot: {x: 0.5, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,12 +142,12 @@ TextureImporter:
       name: SimpleGreen2LeavesFalling_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 129
         y: 256
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5317369, y: 0.2381459}
+      pivot: {x: 0.5, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +168,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5317369, y: 0.2381459}
+      pivot: {x: 0.5, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +189,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5317369, y: 0.2381459}
+      pivot: {x: 0.5, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +210,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5317369, y: 0.2381459}
+      pivot: {x: 0.5, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +231,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5317369, y: 0.2381459}
+      pivot: {x: 0.5, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +252,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5317369, y: 0.2381459}
+      pivot: {x: 0.5, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +273,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5317369, y: 0.2381459}
+      pivot: {x: 0.5, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,6 +281,27 @@ TextureImporter:
       bones: []
       spriteID: d9fa49cde89512b60800000000000000
       internalID: 7719549706410700701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleGreen2LeavesFalling_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b423ad1185dea5400800000000000000
+      internalID: 313824086568088139
       vertices: []
       indices: 
       edges: []

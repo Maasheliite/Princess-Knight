@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4010106910012561497}
   - component: {fileID: 4010106910012561494}
   - component: {fileID: 4010106910012561495}
+  - component: {fileID: 863936695}
   m_Layer: 0
   m_Name: simplegreen1
   m_TagString: Untagged
@@ -96,6 +97,25 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.024615765, y: -0.35}
+  m_Offset: {x: 0.13, y: -0.62}
   serializedVersion: 2
   m_Radius: 0.8732214
+--- !u!95 &863936695
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010106910012561492}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47f65be1ab27f5242afda2b650415fcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
