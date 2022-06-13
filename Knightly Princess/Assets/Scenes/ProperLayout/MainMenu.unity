@@ -971,9 +971,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Credits
+  m_text: 'Luize Kokare
 
-    Flexin etc'
+    Beatrise Avota
+
+    Krista Lauska
+
+    Marta Langmane'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9a8b9a80459c9784f88274dd75f6b08f, type: 2}
   m_sharedMaterial: {fileID: -1789166811158856856, guid: 9a8b9a80459c9784f88274dd75f6b08f, type: 2}
