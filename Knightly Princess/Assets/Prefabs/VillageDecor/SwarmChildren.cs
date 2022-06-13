@@ -14,7 +14,7 @@ public class SwarmChildren : MonoBehaviour
     public float range = 5f;
     public float speed = 2f;
     private List<Vector2> directions = new List<Vector2>();
-    private Transform[] children;
+    public Transform[] children;
     internal virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
