@@ -26371,10 +26371,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6116925222131400376, guid: bb73a710d69a5ca4fbcd16b36c23f524, type: 3}
-      propertyPath: m_SortingOrder
-      value: 120
-      objectReference: {fileID: 0}
     - target: {fileID: 6116925223069114981, guid: bb73a710d69a5ca4fbcd16b36c23f524, type: 3}
       propertyPath: m_Name
       value: Helmet (1)
@@ -26422,10 +26418,6 @@ PrefabInstance:
     - target: {fileID: 6116925223069114982, guid: bb73a710d69a5ca4fbcd16b36c23f524, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6116925223168070417, guid: bb73a710d69a5ca4fbcd16b36c23f524, type: 3}
-      propertyPath: m_SortingOrder
-      value: 110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb73a710d69a5ca4fbcd16b36c23f524, type: 3}
