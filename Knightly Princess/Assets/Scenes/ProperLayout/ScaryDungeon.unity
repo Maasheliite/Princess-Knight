@@ -26375,6 +26375,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 6116925222131400382, guid: bb73a710d69a5ca4fbcd16b36c23f524, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6116925223069114981, guid: bb73a710d69a5ca4fbcd16b36c23f524, type: 3}
       propertyPath: m_Name
       value: Helmet (1)
