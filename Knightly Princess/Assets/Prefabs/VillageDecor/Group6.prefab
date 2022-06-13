@@ -251,8 +251,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 3
-  speed: 2
-  children: []
+  speed: 0.6
+  wiggleSpeed: 0.2
+  showDirection: 0
 --- !u!1 &4006309695152491521
 GameObject:
   m_ObjectHideFlags: 0

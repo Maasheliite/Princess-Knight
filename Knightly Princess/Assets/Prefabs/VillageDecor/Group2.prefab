@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 0.5
-  speed: 0.5
-  children: []
+  speed: 0.6
+  wiggleSpeed: 0.2
+  showDirection: 0
 --- !u!1001 &8286845152148562624
 PrefabInstance:
   m_ObjectHideFlags: 0
