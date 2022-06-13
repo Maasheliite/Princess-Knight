@@ -16,7 +16,7 @@ public class FootStep_Sounds : MonoBehaviour
         audioSource = gameObject.GetComponent<AudioSource> ();
         anim = this.gameObject.GetComponent<Animator>();
         couroutineOn = true;
-        audioSource.clip = currentClip;
+        
         StartCoroutine(Walking());
     }
 
@@ -30,7 +30,7 @@ public class FootStep_Sounds : MonoBehaviour
             }
             else
             {
-                audioSource.Stop();
+                //audioSource.Stop();
             }
             yield return new WaitForSeconds(stepDelay);
         }

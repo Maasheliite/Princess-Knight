@@ -144,7 +144,7 @@ public class SlimeAI : MonoBehaviour
 
             MonsterAudioSource.PlayOneShot(MonsterDeath.audioclip, MonsterDeath.soundVolume);
 
-            Destroy(gameObject, 0.5f);
+            Destroy(gameObject, MonsterDeath.audioclip.length);
 
         }
     }

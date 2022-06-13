@@ -296,6 +296,8 @@ MonoBehaviour:
   Slashpoint: {fileID: 2791213466024218101}
   moveSpeed: 5
   rb: {fileID: 2791213464999398657}
+  Eating: {fileID: 8300000, guid: 092311d68ef434c489c3bf33d99d839e, type: 3}
+  Volume: 0.25
   Prompt: {fileID: 298945033}
 --- !u!61 &2791213464999398658
 BoxCollider2D:

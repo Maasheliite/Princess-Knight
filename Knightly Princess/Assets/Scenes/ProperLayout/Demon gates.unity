@@ -61904,8 +61904,10 @@ MonoBehaviour:
   dialogue:
     name: Demon Guard
     sentences:
-    - I can't come up with the dialogue here
-    - Help
+    - Your exelence!
+    - What a-are you d-doing here?
+    - L-let you in? O-of course!
+    - Go right through.
 --- !u!114 &828273115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61923,6 +61925,7 @@ MonoBehaviour:
     sentences:
     - What are you doing here pipsqueak?
     - Go back home, little girl.
+    - No mere mortal is getting past this gate.
 --- !u!1 &845698206
 GameObject:
   m_ObjectHideFlags: 0

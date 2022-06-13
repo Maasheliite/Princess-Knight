@@ -25,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     private bool isShooting;
     private float shootDelay = .7f;
 
+    private AudioSource PlayerAudioSource;
+    public AudioClip Eating;
+    public float Volume;
 
     private Vector2 dist;
 
@@ -32,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        PlayerAudioSource = gameObject.GetComponent<AudioSource>();
         if (ItemStatic.magicSword)
         {
             animator.runtimeAnimatorController = magicSword as RuntimeAnimatorController;
@@ -53,11 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && ItemStatic.berries)
-        {
-            ItemStatic.health = 100;
-            ItemStatic.berries = false;
-        }
+        
 
 
         if (ItemStatic.isInRange)
@@ -146,6 +146,14 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             freeze();
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.F) && ItemStatic.berries)
+        {
+            PlayerAudioSource.PlayOneShot(Eating, Volume);
+            ItemStatic.health = 100;
+            ItemStatic.berries = false;
         }
     }
 
