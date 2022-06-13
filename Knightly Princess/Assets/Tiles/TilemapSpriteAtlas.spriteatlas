@@ -62,6 +62,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: e67f993739c080e4f952f671a87464af, type: 3}
     - {fileID: 2800000, guid: 8569a3309cd0a2b419dd32a82333775a, type: 3}
     - {fileID: 2800000, guid: bb307e51e5cda8f4099adf2705ef27c8, type: 3}
+    - {fileID: 2800000, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -246,6 +247,27 @@ SpriteAtlas:
   - {fileID: 1772450308739504349, guid: 432e5dcca9bd098499298d18e62736b6, type: 3}
   - {fileID: -1736913687656216019, guid: 432e5dcca9bd098499298d18e62736b6, type: 3}
   - {fileID: 4220389817171883502, guid: 432e5dcca9bd098499298d18e62736b6, type: 3}
+  - {fileID: -6224791313343802170, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 3005087739399196080, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -4640661845638010614, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -1413804032849111362, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -6468422277697954246, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 888956580335024648, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 3173952936986760941, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 2118349574517186250, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 6639829817193051101, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -164529878223424818, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 7908961299996290923, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -5785592595365372537, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 1024063023465591954, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -7790695409102677202, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 349121304018696750, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -5951233017875000718, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -1454376938073294835, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 6606862784136979537, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: 255769652859242507, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -8090871448486089348, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
+  - {fileID: -5143551024379676938, guid: 2f1f1e0e6b49cd546aba3c10b61f7eac, type: 3}
   - {fileID: 5664785947356563628, guid: 5efe886e73b559d499d2a12cb424ea5d, type: 3}
   - {fileID: 1589008873667332426, guid: 5efe886e73b559d499d2a12cb424ea5d, type: 3}
   - {fileID: 2195101633423758378, guid: 5efe886e73b559d499d2a12cb424ea5d, type: 3}
@@ -466,6 +488,27 @@ SpriteAtlas:
   - CliffTilemap 1_6
   - CliffTilemap 1_5
   - CliffTilemap 1_4
+  - DungeonCarpetTileset_18
+  - DungeonCarpetTileset_19
+  - DungeonCarpetTileset_20
+  - DungeonCarpetTileset_16
+  - DungeonCarpetTileset_17
+  - DungeonCarpetTileset_14
+  - DungeonCarpetTileset_15
+  - DungeonCarpetTileset_12
+  - DungeonCarpetTileset_13
+  - DungeonCarpetTileset_10
+  - DungeonCarpetTileset_11
+  - DungeonCarpetTileset_9
+  - DungeonCarpetTileset_8
+  - DungeonCarpetTileset_3
+  - DungeonCarpetTileset_2
+  - DungeonCarpetTileset_1
+  - DungeonCarpetTileset_0
+  - DungeonCarpetTileset_7
+  - DungeonCarpetTileset_6
+  - DungeonCarpetTileset_5
+  - DungeonCarpetTileset_4
   - CaveGrass_7
   - CaveGrass_6
   - CaveGrass_5
