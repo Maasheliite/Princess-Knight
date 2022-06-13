@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: MonsterMovement.soundVolume
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6600224933548045891, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f5990a062dc7554b8c9e6e7d874edc1, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
