@@ -10,6 +10,11 @@ public class ThornBushes : MonoBehaviour
 
     public void Start()
     {
+        if (ItemStatic.hasCut)
+        {
+            Destroy(gameObject);
+        }
+
         ThornAudioSource = gameObject.GetComponent<AudioSource>();
     }
     public void HasShears()
@@ -19,6 +24,9 @@ public class ThornBushes : MonoBehaviour
             ThornAudioSource.PlayOneShot(Snipping, Volume);
             ItemStatic.hasCut = true;
             Destroy(gameObject, 0.9f);
+
+            ItemStatic.isInRange = false;
+
         }
     }
 }
