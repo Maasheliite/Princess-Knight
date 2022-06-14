@@ -8,6 +8,8 @@ public class WizardScript : MonoBehaviour
     public Dialogue Afterthought;
     public Dialogue unfinished;
 
+    public Dialogue happy;
+
     public DialogueTrigger dialogueTrigger;
 
 
@@ -44,9 +46,19 @@ public class WizardScript : MonoBehaviour
         {
             FindObjectOfType<DialogueManager>().StartDialogue(Afterthought);
             FindObjectOfType<PlayerMovement>().StopFighting();
+
+            QuestTraccker.WizardQuest = 3;
+
         }
 
 
+    }
+
+
+    private void Happy()
+    {
+        FindObjectOfType<DialogueManager>().StartDialogue(happy);
+        FindObjectOfType<PlayerMovement>().StopFighting();
     }
 
 
@@ -65,9 +77,14 @@ public class WizardScript : MonoBehaviour
             GetGhostMission();
         }
 
-        else
+        else if (QuestTraccker.WizardQuest == 2)
         {
             After();
+        }
+
+        else
+        {
+            Happy();
         }
     }
 }
