@@ -29,10 +29,6 @@ public static class ItemStatic
 
 
 
-    public static bool hasDoneBerry;
-    public static bool hasDoneFarmer;
-    public static bool hasDoneWizzard;
-    public static bool hasDoneDemon;
 
 
 }

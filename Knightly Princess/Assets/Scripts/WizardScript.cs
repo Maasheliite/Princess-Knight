@@ -5,29 +5,69 @@ using UnityEngine;
 public class WizardScript : MonoBehaviour
 {
     public Dialogue dialogue;
+    public Dialogue Afterthought;
+    public Dialogue unfinished;
+
     public DialogueTrigger dialogueTrigger;
 
 
     public void GetGhostMission()
     {
 
-        if (ItemStatic.ring && !ItemStatic.hasDoneWizzard)
+        if (ItemStatic.ring)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             FindObjectOfType<PlayerMovement>().StopFighting();
 
-            ItemStatic.hasDoneWizzard = true;
 
+            QuestTraccker.WizardQuest = 2;
 
         }
-
+        else
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(unfinished);
+            FindObjectOfType<PlayerMovement>().StopFighting();
+        }
     }
 
     public void GiveMission()
     {
-        if (!ItemStatic.hasDoneWizzard)
+        dialogueTrigger.TriggerDialogue();
+        QuestTraccker.WizardQuest = 1;
+
+    }
+
+
+    private void After()
+    {
+        if (ItemStatic.magicSword)
         {
-            dialogueTrigger.TriggerDialogue();
+            FindObjectOfType<DialogueManager>().StartDialogue(Afterthought);
+            FindObjectOfType<PlayerMovement>().StopFighting();
+        }
+
+
+    }
+
+
+
+    public void Talk()
+    {
+
+        if (QuestTraccker.WizardQuest == 0)
+        {
+            GiveMission();
+        }
+
+
+        else if (QuestTraccker.WizardQuest == 1)
+        {
+            GetGhostMission();
+        }
+
+        else
+        {
+            After();
         }
     }
 }
