@@ -17,6 +17,8 @@ public class TowerLogic : MonoBehaviour
     public Animator third;
     public Animator fourth;
 
+    public Rigidbody2D rb;
+
 
     public void GoUpTo2()
     {
@@ -85,6 +87,20 @@ public class TowerLogic : MonoBehaviour
     private void EnableSprite()
     {
         rend.enabled = true;
+        rb.constraints = RigidbodyConstraints2D.None;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        PlayerMovement.notClimbing = false;
+
+
+    }
+
+
+    public void StopMove()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+
+        PlayerMovement.notClimbing = true;
+
     }
 
 }

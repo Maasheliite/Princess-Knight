@@ -33,6 +33,9 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject Prompt;
 
+
+    public static bool notClimbing;
+
     private void Start()
     {
         PlayerAudioSource = gameObject.GetComponent<AudioSource>();
@@ -141,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isShooting && (movement.x != 0 || movement.y != 0))
+        if (!isShooting && (movement.x != 0 || movement.y != 0) && !notClimbing)
         {
             rb.constraints = RigidbodyConstraints2D.None;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
