@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class ThornBushes : MonoBehaviour
 {
+    private AudioSource ThornAudioSource;
+    public AudioClip Snipping;
+    public float Volume;
+
+    public void Start()
+    {
+        ThornAudioSource = gameObject.GetComponent<AudioSource>();
+    }
     public void HasShears()
     {
         if (ItemStatic.shears)
         {
+            ThornAudioSource.PlayOneShot(Snipping, Volume);
             ItemStatic.hasCut = true;
             Destroy(gameObject, 0.9f);
         }
