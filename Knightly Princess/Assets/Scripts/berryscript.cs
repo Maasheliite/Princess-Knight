@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class berryscript : MonoBehaviour
 {
-    public Dialogue dialogue;
+    public Dialogue DoneMission;
+    public Dialogue Afterthought;
+    public Dialogue unfinished;
+
     public GameObject Sword;
     public DialogueTrigger dialogueTrigger;
 
@@ -12,29 +15,62 @@ public class berryscript : MonoBehaviour
     public void isBerries()
     {
 
-        if (ItemStatic.berries && !ItemStatic.hasDoneBerry)
+        if (ItemStatic.berries)
         {
             ItemStatic.berries = false;
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            FindObjectOfType<DialogueManager>().StartDialogue(DoneMission);
             FindObjectOfType<PlayerMovement>().StopFighting();
 
             Sword.SetActive(true);
+            QuestTraccker.BerryQuest = 2;
 
-            ItemStatic.hasDoneBerry = true;
+        }
+
+
+        else
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(unfinished);
+            FindObjectOfType<PlayerMovement>().StopFighting();
         }
 
     }
 
     public void GiveMission()
     {
-        if (!ItemStatic.hasDoneBerry)
-        {
-            dialogueTrigger.TriggerDialogue();
-        }
+        
+        dialogueTrigger.TriggerDialogue();
+        QuestTraccker.BerryQuest = 1;
     }
 
     public void GetBerries()
     {
         ItemStatic.berries = true;
+    }
+
+    private void After()
+    {
+        FindObjectOfType<DialogueManager>().StartDialogue(Afterthought);
+        FindObjectOfType<PlayerMovement>().StopFighting();
+
+    }
+
+    public void Talk()
+    {
+
+        if (QuestTraccker.BerryQuest == 0)
+        {
+            GiveMission();
+        }
+
+
+        else if (QuestTraccker.BerryQuest == 1)
+        {
+            isBerries();
+        }
+
+        else
+        {
+            After();
+        }
     }
 }

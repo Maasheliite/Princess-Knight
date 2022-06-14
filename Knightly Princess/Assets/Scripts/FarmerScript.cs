@@ -4,35 +4,42 @@ using UnityEngine;
 
 public class FarmerScript : MonoBehaviour
 {
-    public Dialogue dialogue;
+    public Dialogue DoneMission;
+    public Dialogue Afterthought;
+    public Dialogue unfinished;
     public GameObject Shears;
 
-    public GameObject missioncheck;
     public DialogueTrigger dialogueTrigger;
 
-    public void BucketQuest()
+    private void BucketQuest()
     {
 
-        if (ItemStatic.HasWatered && !ItemStatic.hasDoneFarmer)
+        if (ItemStatic.HasWatered)
         {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            FindObjectOfType<DialogueManager>().StartDialogue(DoneMission);
             FindObjectOfType<PlayerMovement>().StopFighting();
 
             Shears.SetActive(true);
 
-            missioncheck.SetActive(false);
+            QuestTraccker.FarmerQuest = 2;
 
-            ItemStatic.hasDoneFarmer = true;
         }
+
+        else
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(unfinished);
+            FindObjectOfType<PlayerMovement>().StopFighting();
+        }
+
 
     }
 
-    public void GiveMission()
+    private void GiveMission()
     {
-        if (!ItemStatic.hasDoneFarmer)
-        {
-            dialogueTrigger.TriggerDialogue();
-        }
+        
+        dialogueTrigger.TriggerDialogue();
+        QuestTraccker.FarmerQuest = 1;
+
     }
 
 
@@ -44,4 +51,34 @@ public class FarmerScript : MonoBehaviour
         }
     }
 
+
+    private void After()
+    {
+        FindObjectOfType<DialogueManager>().StartDialogue(Afterthought);
+        FindObjectOfType<PlayerMovement>().StopFighting();
+
+
+    }
+
+
+
+    public void Talk()
+    {
+
+        if (QuestTraccker.FarmerQuest == 0)
+        {
+            GiveMission();
+        }
+
+
+        else if (QuestTraccker.FarmerQuest == 1)
+        {
+            BucketQuest();
+        }
+
+        else
+        {
+            After();
+        }
+    }
 }
