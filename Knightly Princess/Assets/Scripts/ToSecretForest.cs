@@ -7,32 +7,29 @@ using UnityEngine.Events;
 public class ToSecretForest : MonoBehaviour
 {
     public UnityEvent goPlace;
-    private bool isInRange;
-
-    void Update()
-    {
-        if (isInRange && ItemStatic.hasMoved == false)
-        {
-            goPlace.Invoke();
-            ItemStatic.hasMoved = true;
-        }
-    }
+    public bool canBeUsed;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            if(Time.time - ItemStatic.enterTime <= 3f)
+            {
+                canBeUsed = false;
+            }
+            if (canBeUsed)
+            {
+                canBeUsed = false;
+                ItemStatic.enterTime = Time.time;
+                goPlace.Invoke();
+            }
 
-            isInRange = true;
+            
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            ItemStatic.hasMoved = false;
-            isInRange = false;
-        }
+        canBeUsed = true;
     }
+
 }

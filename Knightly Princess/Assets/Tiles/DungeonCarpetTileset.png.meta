@@ -66,7 +66,7 @@ TextureImporter:
       213: -4640661845638010614
     second: DungeonCarpetTileset_20
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -87,6 +87,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,6 +126,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -140,6 +142,42 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -604,6 +642,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      DungeonCarpetTileset_2: 349121304018696750
+      DungeonCarpetTileset_17: -6468422277697954246
+      DungeonCarpetTileset_19: 3005087739399196080
+      DungeonCarpetTileset_12: 2118349574517186250
+      DungeonCarpetTileset_13: 6639829817193051101
+      DungeonCarpetTileset_20: -4640661845638010614
+      DungeonCarpetTileset_7: 6606862784136979537
+      DungeonCarpetTileset_14: 888956580335024648
+      DungeonCarpetTileset_5: -8090871448486089348
+      DungeonCarpetTileset_8: 1024063023465591954
+      DungeonCarpetTileset_9: -5785592595365372537
+      DungeonCarpetTileset_1: -5951233017875000718
+      DungeonCarpetTileset_18: -6224791313343802170
+      DungeonCarpetTileset_4: -5143551024379676938
+      DungeonCarpetTileset_6: 255769652859242507
+      DungeonCarpetTileset_11: 7908961299996290923
+      DungeonCarpetTileset_0: -1454376938073294835
+      DungeonCarpetTileset_16: -1413804032849111362
+      DungeonCarpetTileset_15: 3173952936986760941
+      DungeonCarpetTileset_3: -7790695409102677202
+      DungeonCarpetTileset_10: -164529878223424818
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

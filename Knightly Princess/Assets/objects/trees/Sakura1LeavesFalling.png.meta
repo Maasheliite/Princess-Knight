@@ -105,7 +105,7 @@ TextureImporter:
       213: -9019787454091654960
     second: Sakura1LeavesFalling_33
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -126,6 +126,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -164,6 +165,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -179,6 +181,42 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -538,6 +576,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Sakura1LeavesFalling_6: -8482121419118064893
+      Sakura1LeavesFalling_4: 99293975791006844
+      Sakura1LeavesFalling_14: 8805091435119736017
+      Sakura1LeavesFalling_0: 5165398760549998990
+      Sakura1LeavesFalling_7: 9135450478790443884
+      Sakura1LeavesFalling_10: -668674067586990327
+      Sakura1LeavesFalling_8: 6392120886333662005
+      Sakura1LeavesFalling_2: 3173808612075599506
+      Sakura1LeavesFalling_11: -6238430166992569724
+      Sakura1LeavesFalling_3: 8596671909587152629
+      Sakura1LeavesFalling_12: 8584934525127951
+      Sakura1LeavesFalling_9: 7356659941557639634
+      Sakura1LeavesFalling_5: -8197235090737463279
+      Sakura1LeavesFalling_1: 7732377058209038635
+      Sakura1LeavesFalling_15: 4679896530197790320
+      Sakura1LeavesFalling_13: 2955756244428758116
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

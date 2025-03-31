@@ -26,6 +26,7 @@ public static class ItemStatic
 
 
     public static bool isInRange;
+    public static float enterTime;
 
 
 

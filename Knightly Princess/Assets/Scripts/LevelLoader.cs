@@ -88,7 +88,6 @@ public class LevelLoader : MonoBehaviour
         transition.SetTrigger("FadeStart");
 
         yield return new WaitForSeconds(transitionTime);
-
         SceneManager.LoadScene(levelindex);
     }
 

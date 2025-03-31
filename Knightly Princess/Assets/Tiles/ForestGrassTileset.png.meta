@@ -84,7 +84,7 @@ TextureImporter:
       213: 6404892866424960495
     second: ForestGrassTileset_26
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -105,6 +105,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -143,6 +144,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -158,6 +160,42 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -748,6 +786,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ForestGrassTileset_7: -3100217114647318234
+      ForestGrassTileset_9: 7928399187600817819
+      ForestGrassTileset_14: -6341091856193047797
+      ForestGrassTileset_0: 7993232170319918511
+      ForestGrassTileset_13: 7001709459574397578
+      ForestGrassTileset_20: 4200719585275973477
+      ForestGrassTileset_8: -2660084752675889588
+      ForestGrassTileset_25: -5223108107797191870
+      ForestGrassTileset_26: 6404892866424960495
+      ForestGrassTileset_4: 3742925629989263478
+      ForestGrassTileset_6: 2411610600046833321
+      ForestGrassTileset_22: -7629322220932714235
+      ForestGrassTileset_19: -5193475779593627553
+      ForestGrassTileset_24: -7393848180978321560
+      ForestGrassTileset_10: 4179951064294624722
+      ForestGrassTileset_18: 4591186539389016647
+      ForestGrassTileset_16: -6940468136230766674
+      ForestGrassTileset_15: 3938982511480194094
+      ForestGrassTileset_21: -8153714529498579453
+      ForestGrassTileset_3: -7477650849772099645
+      ForestGrassTileset_17: -2306911435756314911
+      ForestGrassTileset_12: 4870459104292678293
+      ForestGrassTileset_5: 7423681655058061409
+      ForestGrassTileset_2: -1491989438688103496
+      ForestGrassTileset_11: -7387611029577828239
+      ForestGrassTileset_23: 3888830137138499525
+      ForestGrassTileset_1: 2754361111994530780
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
