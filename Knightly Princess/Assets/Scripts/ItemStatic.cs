@@ -14,7 +14,9 @@ public static class ItemStatic
     public static bool magicSword;
 
 
-
+    public static bool mobile;
+    public static bool buttonPressed;
+    public static bool attack;
 
     public static bool HasWatered;
     public static bool hasMoved;

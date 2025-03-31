@@ -36,7 +36,7 @@ public class InventoryDisplay : MonoBehaviour
         }
     }
 
-    private void setEverythingActive()
+    public void setEverythingActive()
     {
         InventoryTab.SetActive(true);
         QuestLog.SetActive(true);
@@ -81,7 +81,7 @@ public class InventoryDisplay : MonoBehaviour
         }
     }
 
-    private void setEverythingClosed()
+    public void setEverythingClosed()
     {
 
         InventoryTab.SetActive(false);

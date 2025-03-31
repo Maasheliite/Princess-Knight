@@ -11,6 +11,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject usualCanvas;
 
+    public MobileCode mobileUI;
+
     void Update()
     {
         
@@ -27,24 +29,23 @@ public class PauseMenu : MonoBehaviour
 
         }
 
+    }
+    public void Resume()
+    {
+        pauseMenuUI.SetActive(false);
+        mobileUI.UpdateMobileUI();
+        usualCanvas.SetActive(true);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
 
-        void Resume()
-        {
-            pauseMenuUI.SetActive(false);
-            usualCanvas.SetActive(true);
-            Time.timeScale = 1f;
-            GameIsPaused = false;
-        }
-
-        void Pause()
-        {
-            pauseMenuUI.SetActive(true);
-            usualCanvas.SetActive(false);
-            Time.timeScale = 0f;
-            GameIsPaused = true;
-        }
-
-        
+    public void Pause()
+    {
+        mobileUI.HideUI();
+        pauseMenuUI.SetActive(true);
+        usualCanvas.SetActive(false);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
     }
 
 }

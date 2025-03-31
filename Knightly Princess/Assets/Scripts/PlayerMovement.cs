@@ -19,8 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    Vector2 movement;
-    Vector2 direction;
+    public Vector2 movement;
+    public Vector2 direction;
 
     private bool isShooting;
     private float shootDelay = .7f;
@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 dist;
 
     public GameObject Prompt;
+    public GameObject InteractB;
 
 
     public static bool notClimbing;
@@ -63,10 +64,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
+        if (ItemStatic.isInRange && ItemStatic.mobile)
+        {
+            InteractB.SetActive(true);
+        }
 
 
-        if (ItemStatic.isInRange)
+        else if (ItemStatic.isInRange && !ItemStatic.mobile)
         {
             Prompt.SetActive(true);
         }
@@ -74,11 +78,15 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             Prompt.SetActive(false);
+            InteractB.SetActive(false);
         }
 
-
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        if (!ItemStatic.mobile)
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+        }
+        
 
         if (!isShooting)
         {
@@ -122,19 +130,22 @@ public class PlayerMovement : MonoBehaviour
             direction.y = -1;
             direction.x = 0;
         }
+
+        if (Input.GetButtonDown("Fire1") && !ItemStatic.mobile) ItemStatic.attack = true;
+
         if (!stopFighting && ItemStatic.sword || !stopFighting && ItemStatic.magicSword)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (ItemStatic.attack && !isShooting)
             {
-                if (isShooting) return;
-
                 animator.SetBool("isAttacking", true);
 
                 isShooting = true;
                 Invoke("ActuallyShoot", .1f);
                 Invoke("ResetShoot", shootDelay);
+                ItemStatic.attack = false;
 
             }
+            else ItemStatic.attack = false;
         }
 
         

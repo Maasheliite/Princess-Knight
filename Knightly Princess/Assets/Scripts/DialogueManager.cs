@@ -14,6 +14,8 @@ public class DialogueManager : MonoBehaviour
 
     public Queue<string> sentences;
 
+    public MobileCode mobileCode;
+
     public GameObject diaFrame;
     public GameObject PrincessSprite;
     public GameObject BBSprite;
@@ -23,11 +25,14 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        
         sentences = new Queue<string>();
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+
+        FindObjectOfType<MobileCode>().HideUI();
         if (dialogue.name == "Princess")
         {
             PrincessSprite.SetActive(true);
@@ -102,6 +107,7 @@ public class DialogueManager : MonoBehaviour
         WizardSprite.SetActive(false);
         DemonSprite.SetActive(false);
 
+        FindObjectOfType<MobileCode>().UpdateMobileUI();
 
         animator.SetBool("IsOpen", false);
         FindObjectOfType<PlayerMovement>().StartFighting();
