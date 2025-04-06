@@ -42,8 +42,8 @@ public class DemonGuard : MonoBehaviour
 
     public void Talk()
     {
-
-        if (QuestTraccker.DemonQuest == 0)
+        if (ItemStatic.helmet) demonCheck();
+        else if (QuestTraccker.DemonQuest == 0)
         {
             GiveMission();
         }

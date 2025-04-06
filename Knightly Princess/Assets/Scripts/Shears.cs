@@ -8,7 +8,6 @@ public class Shears : MonoBehaviour
     private AudioSource ItemAudioSource;
     void Start()
     {
-
         ItemAudioSource = this.GetComponent<AudioSource>();
     }
     private void OnCollisionEnter2D(Collision2D collision)

@@ -18,7 +18,7 @@ public class Interactable : MonoBehaviour
     {
         if (isInRange)
         {
-            if (Input.GetKeyDown(interactKey) || ItemStatic.buttonPressed)
+            if ((Input.GetKeyDown(interactKey) || ItemStatic.buttonPressed) && !FindObjectOfType<PlayerMovement>().stopFighting)
             {
                 interactAction.Invoke();
                 ItemStatic.buttonPressed = false;

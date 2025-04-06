@@ -7,7 +7,10 @@ public class WaterPalce : MonoBehaviour
     public SpriteRenderer spriterenderer;
     public Sprite newsprite;
 
-
+    private void Start()
+    {
+        if (ItemStatic.HasWatered) spriterenderer.sprite = newsprite;
+    }
 
     public void FullBucket()
     {

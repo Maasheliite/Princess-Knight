@@ -10,6 +10,7 @@ public class FarmerScript : MonoBehaviour
     public GameObject Shears;
 
     public DialogueTrigger dialogueTrigger;
+    public GameObject bucket;
 
     private void BucketQuest()
     {
@@ -34,6 +35,11 @@ public class FarmerScript : MonoBehaviour
 
     }
 
+    public void SpawnBucket()
+    {
+        if (QuestTraccker.FarmerQuest == 0) bucket.SetActive(true);
+    }
+
     private void GiveMission()
     {
         
@@ -45,10 +51,8 @@ public class FarmerScript : MonoBehaviour
 
     private void Start()
     {
-        if (ItemStatic.hasCut)
-        {
-            FindObjectOfType<ThornBushes>().HasShears();
-        }
+
+
     }
 
 

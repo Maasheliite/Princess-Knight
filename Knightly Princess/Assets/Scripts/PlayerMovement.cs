@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject Slash;
     public Transform Slashpoint;
-    private bool stopFighting;
+    public bool stopFighting;
 
     public float moveSpeed = 5f;
 
@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        else if (ItemStatic.isInRange && !ItemStatic.mobile)
+        else if (ItemStatic.isInRange && !ItemStatic.mobile && !stopFighting)
         {
             Prompt.SetActive(true);
         }
@@ -80,12 +80,15 @@ public class PlayerMovement : MonoBehaviour
             Prompt.SetActive(false);
             InteractB.SetActive(false);
         }
-
-        if (!ItemStatic.mobile)
+        if (!stopFighting)
         {
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
+            if(!ItemStatic.mobile)
+            {
+                movement.x = Input.GetAxisRaw("Horizontal");
+                movement.y = Input.GetAxisRaw("Vertical");
+            }
         }
+        
         
 
         if (!isShooting)

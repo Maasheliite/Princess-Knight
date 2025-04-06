@@ -8,7 +8,7 @@ public class sword2 : MonoBehaviour
     private AudioSource ItemAudioSource;
     void Start()
     {
-
+        if (ItemStatic.magicSword) Destroy(this.gameObject);
         ItemAudioSource = this.GetComponent<AudioSource>();
     }
     private void OnCollisionEnter2D(Collision2D collision)

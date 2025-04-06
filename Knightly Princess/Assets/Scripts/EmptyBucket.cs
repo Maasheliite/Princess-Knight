@@ -8,7 +8,6 @@ public class EmptyBucket : MonoBehaviour
     private AudioSource ItemAudioSource;
     void Start()
     {
-
         ItemAudioSource = this.GetComponent<AudioSource>();
     }
     private void OnCollisionEnter2D(Collision2D collision)

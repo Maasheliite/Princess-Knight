@@ -65,26 +65,21 @@ public class WizardScript : MonoBehaviour
 
     public void Talk()
     {
+        if (QuestTraccker.WizardQuest == 3) Happy();
 
-        if (QuestTraccker.WizardQuest == 0)
-        {
-            GiveMission();
-        }
-
-
-        else if (QuestTraccker.WizardQuest == 1)
-        {
-            GetGhostMission();
-        }
-
-        else if (QuestTraccker.WizardQuest == 2)
+        if (QuestTraccker.WizardQuest == 2 || ItemStatic.magicSword)
         {
             After();
         }
 
-        else
+        else if (QuestTraccker.WizardQuest == 1 || ItemStatic.ring)
         {
-            Happy();
+            GetGhostMission();
+        }
+
+        else if (QuestTraccker.WizardQuest == 0)
+        {
+            GiveMission();
         }
     }
 }

@@ -8,7 +8,7 @@ public class RingPickup : MonoBehaviour
     private AudioSource ItemAudioSource;
     void Start()
     {
-
+       if (ItemStatic.ring) Destroy(this.gameObject);
        ItemAudioSource = this.GetComponent<AudioSource>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
