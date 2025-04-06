@@ -46,19 +46,19 @@ public class SlimeAI : MonoBehaviour
 
     public Animator animator;
 
-   
+
 
     public int damage = 1;
 
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        
+
         rb = this.GetComponent<Rigidbody2D>();
         MonsterAudioSource = this.GetComponent<AudioSource>();
         soundCouroutineOn = true;
-        StartCoroutine(MakingSounds());
+        //StartCoroutine(MakingSounds());
         IsAttacking = false;
     }
     private void Awake()
@@ -182,10 +182,9 @@ public class SlimeAI : MonoBehaviour
 
             FindObjectOfType<PlayerMovement>().TakeDamage(damage);
             animator.SetBool("Attacking", true);
-            MonsterAudioSource.PlayOneShot(MonsterAttack.audioclip, MonsterAttack.soundVolume);
             AttackCooldown = AttackTimer;
             IsAttacking = true;
-       
+
         }
     }
 
@@ -201,7 +200,7 @@ public class SlimeAI : MonoBehaviour
 
     private void Idle()
     {
-        
+
         if (timer < Time.time)
         {
             Debug.Log("Idle");
@@ -223,34 +222,43 @@ public class SlimeAI : MonoBehaviour
     }
 
 
+    //public void WalkSound()
+    //{
+    //    MonsterAudioSource.pitch = Random.Range(0.5f, 1.5f);
+    //    MonsterAudioSource.PlayOneShot(MonsterMovement.audioclip, MonsterMovement.soundVolume);
+    //}
+    //public void AttackSound()
+    //{
+    //    MonsterAudioSource.PlayOneShot(MonsterAttack.audioclip, MonsterAttack.soundVolume);
+    //}
 
-    IEnumerator MakingSounds()
-    {
-        while (soundCouroutineOn == true)
-        {
+    //IEnumerator MakingSounds()
+    //{
+    //    while (soundCouroutineOn == true)
+    //    {
 
-            if (!IsAttacking)
-            {
-                SoundEffects soundeffect;
+    //        if (!IsAttacking)
+    //        {
+    //            SoundEffects soundeffect;
 
-                if (IsMoving)
-                {
-                    soundeffect = MonsterMovement;
-                }
-                else
-                {
-                    soundeffect = MonsterIdle;
-                }
+    //            if (IsMoving)
+    //            {
+    //                soundeffect = MonsterMovement;
+    //            }
+    //            else
+    //            {
+    //                soundeffect = MonsterIdle;
+    //            }
 
-                MonsterAudioSource.PlayOneShot(soundeffect.audioclip, soundeffect.soundVolume);
-               
-                yield return new WaitForSeconds(soundeffect.audioclip.length + soundeffect.soundDelay);
-            }
-            else
-            {
-               
-                yield return new WaitForSeconds(0.1f);
-            }
-        }
-    }
+    //            MonsterAudioSource.PlayOneShot(soundeffect.audioclip, soundeffect.soundVolume);
+
+    //            yield return new WaitForSeconds(soundeffect.audioclip.length + soundeffect.soundDelay);
+    //        }
+    //        else
+    //        {
+
+    //            yield return new WaitForSeconds(0.1f);
+    //        }
+    //    }
+    //}
 }

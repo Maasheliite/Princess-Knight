@@ -21,6 +21,10 @@ public class DialogueManager : MonoBehaviour
     public GameObject FarmerSprite;
     public GameObject DemonSprite;
 
+    public AudioSource dialogueSound;
+    public float pitchVariance;
+    public float pitch;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -31,24 +35,29 @@ public class DialogueManager : MonoBehaviour
         if (dialogue.name == "Princess")
         {
             PrincessSprite.SetActive(true);
+            pitch = 1.45f;
         }
 
         if (dialogue.name == "Farmer")
         {
             FarmerSprite.SetActive(true);
+            pitch = 0.65f;
         }
         if (dialogue.name == "Berry Brute")
         {
             BBSprite.SetActive(true);
+            pitch = 0.95f;
         }
         if (dialogue.name == "Wizard")
         {
             WizardSprite.SetActive(true);
+            pitch = 1.15f;
         }
 
         if (dialogue.name == "Demon Guard")
         {
             DemonSprite.SetActive(true);
+            pitch = 0.25f;
         }
 
 
@@ -87,11 +96,15 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
+        dialogueSound.enabled = true;
+        dialogueSound.Play();
+        foreach (char letter in sentence.ToCharArray())
         {
+            dialogueSound.pitch = Random.Range(pitch - pitchVariance, pitch + pitchVariance);
             dialogueText.text += letter;
             yield return null;
         }
+        dialogueSound.enabled = false;
     }
 
     void EndDialogue()
