@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
+        Debug.Log("Trigger Dialogue");
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
         FindObjectOfType<PlayerMovement>().StopFighting();
     }

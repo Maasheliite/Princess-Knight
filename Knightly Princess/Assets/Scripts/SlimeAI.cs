@@ -35,8 +35,6 @@ public class SlimeAI : MonoBehaviour
     [SerializeField]
     private bool IsMoving;
 
-    public bool soundCouroutineOn;
-
     private AudioSource MonsterAudioSource;
 
     private Vector2 IdleWalk;
@@ -57,8 +55,6 @@ public class SlimeAI : MonoBehaviour
         
         rb = this.GetComponent<Rigidbody2D>();
         MonsterAudioSource = this.GetComponent<AudioSource>();
-        soundCouroutineOn = true;
-        StartCoroutine(MakingSounds());
         IsAttacking = false;
     }
     private void Awake()
@@ -141,9 +137,6 @@ public class SlimeAI : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Slash"))
         {
-
-            MonsterAudioSource.PlayOneShot(MonsterDeath.audioclip, MonsterDeath.soundVolume);
-
             Destroy(gameObject, MonsterDeath.audioclip.length);
 
         }
@@ -182,7 +175,6 @@ public class SlimeAI : MonoBehaviour
 
             FindObjectOfType<PlayerMovement>().TakeDamage(damage);
             animator.SetBool("Attacking", true);
-            MonsterAudioSource.PlayOneShot(MonsterAttack.audioclip, MonsterAttack.soundVolume);
             AttackCooldown = AttackTimer;
             IsAttacking = true;
        
@@ -220,37 +212,5 @@ public class SlimeAI : MonoBehaviour
             movement = direction;
         }
 
-    }
-
-
-
-    IEnumerator MakingSounds()
-    {
-        while (soundCouroutineOn == true)
-        {
-
-            if (!IsAttacking)
-            {
-                SoundEffects soundeffect;
-
-                if (IsMoving)
-                {
-                    soundeffect = MonsterMovement;
-                }
-                else
-                {
-                    soundeffect = MonsterIdle;
-                }
-
-                MonsterAudioSource.PlayOneShot(soundeffect.audioclip, soundeffect.soundVolume);
-               
-                yield return new WaitForSeconds(soundeffect.audioclip.length + soundeffect.soundDelay);
-            }
-            else
-            {
-               
-                yield return new WaitForSeconds(0.1f);
-            }
-        }
     }
 }

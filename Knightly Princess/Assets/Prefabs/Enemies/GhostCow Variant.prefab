@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -7281750364575579455, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
@@ -18,6 +19,38 @@ PrefabInstance:
     - target: {fileID: -7281750364575579455, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044728651325039682, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: pitchMax
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044728651325039682, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: pitchMin
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044728651325039682, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: idleSound.audioclip
+      value: 
+      objectReference: {fileID: 8300000, guid: c87fa194b13940f42a85609d66cbcc4b, type: 3}
+    - target: {fileID: 1044728651325039682, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: moveSound.audioclip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a29dc91a03abe9439dbeda7888af3f0, type: 3}
+    - target: {fileID: 1044728651325039682, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: deathSound.audioclip
+      value: 
+      objectReference: {fileID: 8300000, guid: c3c2c6d2f873ebb46b28ed0625cf648b, type: 3}
+    - target: {fileID: 1044728651325039682, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: attackSound.audioclip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15766666885043c4a979dc91d7835723, type: 3}
+    - target: {fileID: 1044728651325039682, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: moveSound.soundVolume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044728651325039682, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
+      propertyPath: attackSound.soundVolume
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1066549308810563329, guid: 4ad99083eec965b449942e320feab3d8, type: 3}
       propertyPath: m_Sprite
@@ -149,4 +182,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 9f5990a062dc7554b8c9e6e7d874edc1, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ad99083eec965b449942e320feab3d8, type: 3}

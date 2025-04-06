@@ -37,7 +37,6 @@ public class berryscript : MonoBehaviour
 
     public void GiveMission()
     {
-        
         dialogueTrigger.TriggerDialogue();
         QuestTraccker.BerryQuest = 1;
     }

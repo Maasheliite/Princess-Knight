@@ -44945,6 +44945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6656282255955545074, guid: cdde9e0da5e442148ae76956a1dcad8b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45194,6 +45198,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7060811546666205806, guid: 226583aa05234f844a4bbffc0ba8a8b5, type: 3}
   m_PrefabInstance: {fileID: 802759949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &654546097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3175548641264311181, guid: cdde9e0da5e442148ae76956a1dcad8b, type: 3}
+  m_PrefabInstance: {fileID: 377721925}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &675009066
 PrefabInstance:
@@ -77778,6 +77787,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7060811546666205806, guid: 226583aa05234f844a4bbffc0ba8a8b5, type: 3}
   m_PrefabInstance: {fileID: 110305218}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1239333152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1239333154}
+  - component: {fileID: 1239333153}
+  m_Layer: 0
+  m_Name: Audio Reverb Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!167 &1239333153
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239333152}
+  m_Enabled: 1
+  m_MinDistance: 32.707535
+  m_MaxDistance: 32.707535
+  m_ReverbPreset: 16
+  m_Room: -1000
+  m_RoomHF: -3300
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.54
+  m_Reflections: -2560
+  m_ReflectionsDelay: 0.162
+  m_Reverb: -229
+  m_ReverbDelay: 0.088
+  m_HFReference: 5000
+  m_Diffusion: 79
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
+--- !u!4 &1239333154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239333152}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8, y: 13.3, z: -0.29602656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1270942629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78375,6 +78440,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2791213464999398662, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
+      propertyPath: InteractB
+      value: 
+      objectReference: {fileID: 654546097}
     - target: {fileID: 2791213464999398663, guid: daf7999b863736f43b4f5c9f927422eb, type: 3}
       propertyPath: m_Name
       value: player 1
@@ -80049,3 +80118,4 @@ SceneRoots:
   - {fileID: 845698209}
   - {fileID: 522937415}
   - {fileID: 1737848516}
+  - {fileID: 1239333154}

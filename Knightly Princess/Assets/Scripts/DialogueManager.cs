@@ -23,6 +23,10 @@ public class DialogueManager : MonoBehaviour
     public GameObject FarmerSprite;
     public GameObject DemonSprite;
 
+    public AudioSource dialogueSound;
+    public float dialoguePitchVariance;
+    public float dialoguePitch;
+
     void Start()
     {
         
@@ -31,53 +35,43 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-
         FindObjectOfType<MobileCode>().HideUI();
         if (dialogue.name == "Princess")
         {
             PrincessSprite.SetActive(true);
+            dialoguePitch = 1.45f;
         }
-
         if (dialogue.name == "Farmer")
         {
             FarmerSprite.SetActive(true);
+            dialoguePitch = 0.65f;
         }
         if (dialogue.name == "Berry Brute")
         {
             BBSprite.SetActive(true);
+            dialoguePitch = 0.95f;
         }
         if (dialogue.name == "Wizard")
         {
             WizardSprite.SetActive(true);
+            dialoguePitch = 1.15f;
         }
-
         if (dialogue.name == "Demon Guard")
         {
             DemonSprite.SetActive(true);
+            dialoguePitch = 0.25f;
         }
-
-
-
-
-
-
-
-
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
-
         sentences.Clear();
-
         foreach(string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
-
         DisplayNextSentence();
     }
     public void DisplayNextSentence()
     {
-
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -92,11 +86,15 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
+        dialogueSound.enabled = true;
+        dialogueSound.Play();
+        foreach (char letter in sentence.ToCharArray())
         {
+            dialogueSound.pitch = Random.Range(dialoguePitch - dialoguePitchVariance, dialoguePitch + dialoguePitchVariance);
             dialogueText.text += letter;
             yield return null;
         }
+        dialogueSound.enabled = false;
     }
 
     void EndDialogue()
